@@ -10,16 +10,21 @@ import {
 import GreetingContainer from './greeting/greeting_container';
 import SignupFormContainer from './session_form/signup_form_container';
 import SigninFormContainer from './session_form/signin_form_container';
+import { AuthRoute, ProtectedRoute } from '../util/route_util';
+
 
 const App = () => (
     <div>
         <header>
+        <Link to="/" className="header-link">
             <main>IntoTheGloss</main>
-            <GreetingContainer />
+        </Link>
+        <GreetingContainer />
         </header>
-
-        <Route path="/signin" component={SigninFormContainer} />
-        <Route path="/signup" component={SignupFormContainer} />
+    <Switch>
+        <AuthRoute exact path="/signin" component={SigninFormContainer} />
+        <AuthRoute exact path="/signup" component={SignupFormContainer} />
+    </Switch>
     </div>
 );
 

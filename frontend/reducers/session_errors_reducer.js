@@ -1,5 +1,5 @@
-import {RECEIVE_SESSION_ERRORS, RECEIVE_CURRENT_USER } from '../actions/session_actions';
-import sessionReducer from './session_reducer';
+import { RECEIVE_SESSION_ERRORS, RECEIVE_CURRENT_USER } from '../actions/session_actions';
+
 
 
 const sessionErrorsReducer = (state = [], action ) => {
@@ -14,4 +14,4 @@ const sessionErrorsReducer = (state = [], action ) => {
     }
 }
 
-export default sessionReducer;
+export default sessionErrorsReducer;

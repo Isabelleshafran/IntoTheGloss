@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const store = configureStore();
 
     // testing 
+    window.getState = store.getState;
+    window.dispatch = store.dispatch;
     window.login = login 
     window.signup = signup
     window.logout = logout

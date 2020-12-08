@@ -14,7 +14,7 @@ class SessionSigninForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         this.props.processForm(this.state)
-
+        this.props.openModal('account')
     }   
     
     handleChange(field){
@@ -39,6 +39,7 @@ class SessionSigninForm extends React.Component {
             <div className="signin-form-container">
                 <form onSubmit={this.handleSubmit} className="signin-form-box">
                     <span>Sign in</span>
+                    {this.renderErrors()}
                     <div className="signin-form">
                         <br/>
                         <label>Email Address: 
@@ -66,7 +67,6 @@ class SessionSigninForm extends React.Component {
                     {this.props.otherForm}
                 </div>
                 <div onClick={this.props.closeModal} className="close-x">X</div>
-                {this.renderErrors()}
             </div>  
         )
     } 

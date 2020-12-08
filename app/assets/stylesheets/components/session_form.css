@@ -14,6 +14,7 @@
     background-color: black;
      display: flex; 
     justify-content: center;
+    cursor: pointer;
     
 }
 
@@ -21,8 +22,9 @@
     padding: 3%;
     border: 1px solid black;
     margin: 1px;
-     display: flex; 
+    display: flex; 
     justify-content: center;
+    cursor: pointer;
 }
 
 span {
@@ -37,4 +39,6 @@ span {
     margin: 1px;
     display: flex; 
     justify-content: center;
+    width: 100%;
+    cursor: pointer;
 }

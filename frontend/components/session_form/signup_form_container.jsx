@@ -10,7 +10,6 @@ const msp = ({ errors }) => {
     return {
         errors: errors.session,
         formType: 'Create account',
-        // navLink: <Link to="/signin">sign in</Link>,
         form: { email: "", password: "", first_name: "", last_name: ""}
     };
 };
@@ -23,7 +22,8 @@ const mdp = dispatch => {
                 Sign In
             </button>
         ),
-        closeModal: () => dispatch(closeModal())
+        closeModal: () => dispatch(closeModal()), 
+        openModal: modal => dispatch(openModal(modal))
     };
 };
 

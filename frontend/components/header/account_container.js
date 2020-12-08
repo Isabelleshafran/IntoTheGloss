@@ -1,9 +1,8 @@
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 
-import Header from './header'
-import { openModal, closeModal } from '../../actions/modal_actions';
+import Account from './account';
 import { logout } from '../../actions/session_actions';
-
+import { openModal, closeModal } from '../../actions/modal_actions';
 
 const msp = (state) => ({
     currentUser: state.entities.users[state.session.id]
@@ -11,8 +10,8 @@ const msp = (state) => ({
 
 const mdp = (dispatch) => ({
     logout: () => dispatch(logout()),
-    openModal: modal => dispatch(openModal(modal)),
     closeModal: () => dispatch(closeModal()),
+    openModal: (modal) => dispatch(openModal(modal))
 })
 
-export default connect(msp, mdp)(Header)
+export default connect(msp, mdp)(Account)

@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import Modal from '../modal/modal';
-import GreetingContainer from '../greeting/greeting_container'
 
 
 
@@ -9,18 +7,25 @@ class Header extends React.Component {
     constructor(props) {
         super(props);
         
+        // this.handleClick = this.handleClick.bind(this);
     }
+
+    handleClick() {
+        
+        if(this.props.currentUser === null) {
+            this.props.openModal('signup')
+        } else {
+            this.props.openModal('account')
+        }
+
+     
+    }
+
     render() { 
         return ( 
             <div className="main-header">
-                <Link to="/">
-                    <main className="logo">IntoTheGloss.</main>
-                </Link>
-                <div>
-                    <ul className="greeting-container"> 
-                        <GreetingContainer />
-                    </ul>
-                </div>
+                <Link to="/"><main className="logo">IntoTheGloss.</main></Link>
+                <div onClick={() => this.handleClick()}><i className="fas fa-user">Icon</i></div>
             </div>
          );
     }

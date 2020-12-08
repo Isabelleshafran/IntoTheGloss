@@ -34,28 +34,50 @@ class SessionSignupForm extends React.Component {
     render() {
         return (
             <div className="signup-form-container">
-                <form onSubmit={this.handleSubmit} className="signin-form-box">
-                    Sign up
-                    <br />
-                    <label>First Name:
-                        <input type="text" value={this.state.first_name} onChange={this.handleChange('first_name')} />
-                    </label>
+                <form onSubmit={this.handleSubmit} className="signup-form-box">
+                    <span>Sign up</span>
+                    <div className="signup-form">
+                        <br />
+                        <label>First Name:
+                            <br/>
+                            <input type="text" 
+                            value={this.state.first_name} 
+                            onChange={this.handleChange('first_name')} 
+                            className="signup-input"/>
+                        </label>
+                        <br/>
+                        <label>Last Name: 
+                            <br/>
+                            <input type="text" 
+                            value={this.state.last_name} 
+                            onChange={this.handleChange('last_name')} 
+                            className="signup-input"/>
+                        </label>
+                        <br/>
+                        <label>Email Address:
+                            <br/>
+                            <input type="email" 
+                            value={this.state.email} 
+                            onChange={this.handleChange('email')} 
+                            className="signup-input"/>
+                        </label>
+                        <br />
+                        <label>Password:
+                            <br/>
+                            <input type="password" 
+                            value={this.state.password} 
+                            onChange={this.handleChange('password')} 
+                            className="signup-input"/>
+                        </label>
+                        <br />
+                        <input className="session-submit" type="submit" value={this.props.formType} />
+                    </div>
                     <br/>
-                    <label>Last Name: 
-                        <input type="text" value={this.state.last_name} onChange={this.handleChange('last_name')} />
-                    </label>
-                    <br/>
-                    <label>Email Address:
-                        <input type="text" value={this.state.email} onChange={this.handleChange('email')} />
-                    </label>
-                    <br />
-                    <label>Password:
-                        <input type="password" value={this.state.password} onChange={this.handleChange('password')} />
-                    </label>
-                    <br />
-                    <input className="session-submit" type="submit" value={this.props.formType} />
                 </form>
-                 or {this.props.otherForm}
+                or 
+                <div className="sign-in-button">
+                    {this.props.otherForm}
+                </div>
                 <div onClick={this.props.closeModal} className="close-x">X</div>
                 {this.renderErrors()}
             </div>

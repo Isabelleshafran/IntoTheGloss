@@ -1,4 +1,6 @@
 import React from 'react';
+// import Greeting from '../greeting/greeting';
+// import GreetingContainer from '../greeting/greeting_container';
 
 
 class SessionSigninForm extends React.Component {
@@ -12,6 +14,7 @@ class SessionSigninForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         this.props.processForm(this.state)
+
     }   
     
     handleChange(field){
@@ -35,20 +38,33 @@ class SessionSigninForm extends React.Component {
         return (
             <div className="signin-form-container">
                 <form onSubmit={this.handleSubmit} className="signin-form-box">
-                    Sign in 
+                    <span>Sign in</span>
+                    <div className="signin-form">
+                        <br/>
+                        <label>Email Address: 
+                            <br/>
+                            <input type="email" 
+                            value={this.state.email} 
+                            onChange={this.handleChange('email')} 
+                            className="signin-input"/>
+                        </label>
+                        <br/>
+                        <label>Password: 
+                            <br/>
+                            <input type="password" 
+                            value={this.state.password} 
+                            onChange={this.handleChange('password')} 
+                            className="signin-input"/>
+                        </label>
+                        <br/>
+                        <input className="session-submit" type="submit" value={this.props.formType} />
+                    </div>
                     <br/>
-                    <label>Email Address: 
-                        <input type="text" value={this.state.email} onChange={this.handleChange('email')}/>
-                    </label>
-                    <br/>
-                    <label>Password: 
-                        <input type="password" value={this.state.password} onChange={this.handleChange('password')}/>
-                    </label>
-                    <br/>
-                    <input className="session-submit" type="submit" value={this.props.formType} />
                 </form>
-
-                or {this.props.otherForm}
+                or
+                <div className="create-account-button">
+                    {this.props.otherForm}
+                </div>
                 <div onClick={this.props.closeModal} className="close-x">X</div>
                 {this.renderErrors()}
             </div>  

@@ -1,0 +1,40 @@
+
+.signup-input, .signin-input {
+    padding: 3%;
+    border: 1px solid black;
+    margin: 1px;
+}
+
+
+.create-account-button {
+    padding: 3%;
+    border: 1px solid black;
+    margin: 1px;
+    color: white;
+    background-color: black;
+     display: flex; 
+    justify-content: center;
+    
+}
+
+.sign-in-button {
+    padding: 3%;
+    border: 1px solid black;
+    margin: 1px;
+     display: flex; 
+    justify-content: center;
+}
+
+span {
+    display: flex; 
+    justify-content: center;
+    font-weight: bold;
+}
+
+.session-submit {
+    padding: 3%;
+    border: 1px solid black;
+    margin: 1px;
+    display: flex; 
+    justify-content: center;
+}

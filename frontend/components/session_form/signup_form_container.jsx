@@ -9,7 +9,7 @@ import { openModal, closeModal } from '../../actions/modal_actions';
 const msp = ({ errors }) => {
     return {
         errors: errors.session,
-        formType: 'sign up',
+        formType: 'Create account',
         // navLink: <Link to="/signin">sign in</Link>,
         form: { email: "", password: "", first_name: "", last_name: ""}
     };
@@ -20,7 +20,7 @@ const mdp = dispatch => {
         processForm: (user) => dispatch(signup(user)),
         otherForm: (
             <button onClick={() => dispatch(openModal('signin'))}>
-                sign in
+                Sign In
             </button>
         ),
         closeModal: () => dispatch(closeModal())

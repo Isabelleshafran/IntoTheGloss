@@ -9,6 +9,7 @@ import {
 
 import GreetingContainer from './greeting/greeting_container';
 import Modal from './modal/modal';
+import Header from './header/header'
 import SignupFormContainer from './session_form/signup_form_container';
 import SigninFormContainer from './session_form/signin_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
@@ -16,12 +17,9 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 const App = () => (
     <div>
-        <Modal />
         <header>
-        <Link to="/" className="header-link">
-            <main>IntoTheGloss</main>
-        </Link>
-        <GreetingContainer />
+            <Modal />
+            <Header />
         </header>
     <Switch>
         {/* <AuthRoute exact path="/signin" component={SigninFormContainer} />

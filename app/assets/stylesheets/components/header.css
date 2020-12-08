@@ -1,0 +1,24 @@
+
+.logo {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.main-header {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    padding: 10px 0;
+    font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    color: #000;
+    line-height: 1.5;
+    /* border: 1px solid black; */
+}
+
+.greeting-container {
+    /* display: flex; */
+    align-items: right;
+}

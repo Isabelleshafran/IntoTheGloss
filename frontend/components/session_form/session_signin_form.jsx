@@ -1,6 +1,4 @@
 import React from 'react';
-// import Greeting from '../greeting/greeting';
-// import GreetingContainer from '../greeting/greeting_container';
 
 
 class SessionSigninForm extends React.Component {
@@ -13,12 +11,23 @@ class SessionSigninForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.processForm(this.state)
-        this.props.openModal('account')
+        this.props.processForm(this.state);
+        if (this.props.currentUser) {
+            this.props.openModal('account')
+        }
     }   
     
     handleChange(field){
         return e => this.setState({ [field]: e.currentTarget.value })
+    }
+
+
+    demoUser(){
+        this.setState({email: "guest@aa.io", password: "password"}, () => this.props.processForm(this.state))
+       
+        if (this.props.currentUser) {
+            this.props.openModal('account')
+        }
     }
 
     renderErrors() { 
@@ -63,9 +72,10 @@ class SessionSigninForm extends React.Component {
                     <br/>
                 </form>
                 or
-                <div className="create-account-button">
-                    {this.props.otherForm}
-                </div>
+                <div className="create-account-button">{this.props.otherForm}</div>
+                <br/>
+                <br/>
+                <button className="demo-button" onClick={() => this.demoUser()}>Demo User Sign In</button>
                 <div onClick={this.props.closeModal} className="close-x">X</div>
             </div>  
         )

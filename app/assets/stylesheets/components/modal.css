@@ -22,8 +22,9 @@
  .close-x {
    position: absolute;
    top: 5px;
-   right: 5px;
+   left: 5px;
    cursor: pointer;
+   padding: 5%;
  }
 
  .account-signout {

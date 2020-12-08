@@ -18,6 +18,7 @@
     
 }
 
+
 .sign-in-button {
     padding: 3%;
     border: 1px solid black;
@@ -41,4 +42,16 @@ span {
     justify-content: center;
     width: 100%;
     cursor: pointer;
+}
+
+.demo-button {
+    padding: 3%;
+    border: 1px solid black;
+    margin: 1px;
+    color: white;
+    background-color: black;
+    display: flex; 
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
 }

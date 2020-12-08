@@ -14,8 +14,8 @@ class Account extends React.Component {
     }
     render() { 
         return ( 
-            <div>
-                <main>Your Account</main>
+            <div className="account-container">
+                <main className="your-account">Your Account</main>
                 <br/>
                 <ul>Orders</ul>
                 <ul>Shipping Addresses</ul>

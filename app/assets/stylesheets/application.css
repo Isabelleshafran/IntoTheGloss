@@ -24,7 +24,9 @@
 /* // Components */
 @import "components/modal";
 @import "components/header";
-@import "components/session_form"
+@import "components/session_form";
+@import "components/account_info.css"
+
 
 
 

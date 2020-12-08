@@ -6,11 +6,12 @@ import SessionSignupForm from './session_signup_form';
 import { openModal, closeModal } from '../../actions/modal_actions';
 
 
-const msp = ({ errors }) => {
+const msp = ({ errors, entities: { users }, session }) => {
     return {
         errors: errors.session,
         formType: 'Create account',
-        form: { email: "", password: "", first_name: "", last_name: ""}
+        form: { email: "", password: "", first_name: "", last_name: ""}, 
+        currentUser: users[session.id]
     };
 };
 

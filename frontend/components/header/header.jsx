@@ -12,13 +12,12 @@ class Header extends React.Component {
 
     handleClick() {
         
-        if(this.props.currentUser === null) {
+        if(!this.props.currentUser) {
             this.props.openModal('signup')
         } else {
             this.props.openModal('account')
         }
 
-     
     }
 
     render() { 

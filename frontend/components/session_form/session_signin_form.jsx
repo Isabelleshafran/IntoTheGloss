@@ -33,8 +33,8 @@ class SessionSigninForm extends React.Component {
 
     render() {
         return (
-            <div className="login-form-container">
-                <form onSubmit={this.handleSubmit}>
+            <div className="signin-form-container">
+                <form onSubmit={this.handleSubmit} className="signin-form-box">
                     Sign in 
                     <br/>
                     <label>Email Address: 
@@ -48,7 +48,8 @@ class SessionSigninForm extends React.Component {
                     <input className="session-submit" type="submit" value={this.props.formType} />
                 </form>
 
-                or {this.props.navLink}
+                or {this.props.otherForm}
+                <div onClick={this.props.closeModal} className="close-x">X</div>
                 {this.renderErrors()}
             </div>  
         )

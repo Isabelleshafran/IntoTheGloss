@@ -34,7 +34,7 @@ class SessionSignupForm extends React.Component {
     render() {
         return (
             <div className="signup-form-container">
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit} className="signin-form-box">
                     Sign up
                     <br />
                     <label>First Name:
@@ -55,7 +55,8 @@ class SessionSignupForm extends React.Component {
                     <br />
                     <input className="session-submit" type="submit" value={this.props.formType} />
                 </form>
-                 or {this.props.navLink}
+                 or {this.props.otherForm}
+                <div onClick={this.props.closeModal} className="close-x">X</div>
                 {this.renderErrors()}
             </div>
         )

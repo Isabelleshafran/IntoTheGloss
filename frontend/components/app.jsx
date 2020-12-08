@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 
 import GreetingContainer from './greeting/greeting_container';
+import Modal from './modal/modal';
 import SignupFormContainer from './session_form/signup_form_container';
 import SigninFormContainer from './session_form/signin_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
@@ -15,6 +16,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 const App = () => (
     <div>
+        <Modal />
         <header>
         <Link to="/" className="header-link">
             <main>IntoTheGloss</main>
@@ -22,8 +24,8 @@ const App = () => (
         <GreetingContainer />
         </header>
     <Switch>
-        <AuthRoute exact path="/signin" component={SigninFormContainer} />
-        <AuthRoute exact path="/signup" component={SignupFormContainer} />
+        {/* <AuthRoute exact path="/signin" component={SigninFormContainer} />
+        <AuthRoute exact path="/signup" component={SignupFormContainer} /> */}
     </Switch>
     </div>
 );

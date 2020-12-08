@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
-const Greeting = ({ currentUser, logout }) => {
+const Greeting = ({ currentUser, logout, openModal }) => {
     const sessionLinks = () => (
         <nav>
-            <Link to={"/signin"}>Sign in</Link>
+            <button onClick={() => openModal('signin')}>Sign In</button>
             &nbsp;or&nbsp;
-            <Link to={"/signup"}>Create an account</Link>
+            <button onClick={() => openModal('signup')}>Create an account</button>
         </nav>
     )
 
@@ -17,7 +17,7 @@ const Greeting = ({ currentUser, logout }) => {
         </hgroup>
     )
 
-    return currentUser ? peronsalGreeting() : sessionLinks();
+    return currentUser ? peronsalGreeting(currentUser, logout) : sessionLinks();
 }
 
 export default Greeting;

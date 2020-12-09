@@ -1,6 +1,11 @@
-.account-signout:hover, a:hover {
+.account-signout:hover {
     text-decoration: underline;
     color: rgb(85, 85, 255)
+}
+
+.account-container > ul:hover {
+    color: rgb(85, 85, 255);
+    text-decoration: underline;
 }
 
 .your-account {

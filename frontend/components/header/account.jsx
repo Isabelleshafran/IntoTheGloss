@@ -17,7 +17,7 @@ class Account extends React.Component {
             <div className="account-container">
                 <main className="your-account">Your Account</main>
                 <br/>
-                <ul>Orders</ul>
+                {/* <ul>Orders</ul> */}
                 <ul><a target="_blank" href="https://github.com/Isabelleshafran/IntoTheGloss">Github</a></ul>
                 <ul><a target="_blank" href="https://www.linkedin.com/in/isabelleshafran/">Linkedin</a></ul>
                 <ul><a target="_blank" href="https://jae-matchstick.herokuapp.com/">Refer a Friend</a></ul>

@@ -9,4 +9,4 @@
 
 User.destroy_all 
 
-guest = User.create!(email: "guest@user.com", password: "password", first_name: "guest", last_name: "user")
+guest = User.create!(email: "guest@glossier.io", password: "password", first_name: "guest", last_name: "user")

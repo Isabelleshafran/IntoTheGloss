@@ -19,7 +19,8 @@ const mdp = dispatch => ({
         </button>
     ),
     closeModal: () => dispatch(closeModal()), 
-    openModal: modal => dispatch(openModal(modal))
+    openModal: modal => dispatch(openModal(modal)), 
+    login: (user) => dispatch(login(user))
 })
 
 export default connect(msp, mdp)(SessionSigninForm);

@@ -24,7 +24,7 @@ class Header extends React.Component {
         return ( 
             <div className="main-header">
                 <Link to="/"><main className="logo">IntoTheGloss.</main></Link>
-                <div onClick={() => this.handleClick()}><i className="fas fa-user">Icon</i></div>
+                <div onClick={() => this.handleClick()}><i className="far fa-user"></i></div>
             </div>
          );
     }

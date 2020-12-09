@@ -7,6 +7,8 @@ class SessionSigninForm extends React.Component {
         this.state = this.props.form;
 
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.demoUser = this.demoUser.bind(this);
+
     }
 
     handleSubmit(e) {
@@ -15,6 +17,7 @@ class SessionSigninForm extends React.Component {
         if (this.props.currentUser) {
             this.props.openModal('account')
         }
+        
     }   
     
     handleChange(field){
@@ -22,12 +25,19 @@ class SessionSigninForm extends React.Component {
     }
 
 
-    demoUser(){
-        this.setState({email: "guest@aa.io", password: "password"}, () => this.props.processForm(this.state))
-       
+    demoUser(e){
+        e.preventDefault()
+        this.setState({
+            email: "guest@glossier.io",
+            password: "password", 
+            first_name: "guest", 
+            last_name: "user"
+        }, () => this.props.login(this.state));
+
         if (this.props.currentUser) {
             this.props.openModal('account')
         }
+        
     }
 
     renderErrors() { 
@@ -75,7 +85,7 @@ class SessionSigninForm extends React.Component {
                 <div className="create-account-button">{this.props.otherForm}</div>
                 <br/>
                 <br/>
-                <button className="demo-button" onClick={() => this.demoUser()}>Demo User Sign In</button>
+                <button className="demo-button" onClick={this.demoUser}>Demo User Sign In</button>
                 <div onClick={this.props.closeModal} className="close-x">X</div>
             </div>  
         )

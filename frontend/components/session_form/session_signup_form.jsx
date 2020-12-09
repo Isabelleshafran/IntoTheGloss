@@ -5,7 +5,10 @@ class SessionSignupForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = this.props.form;
+
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.demoUser = this.demoUser.bind(this);
+
     }
 
     handleSubmit(e) {
@@ -20,12 +23,15 @@ class SessionSignupForm extends React.Component {
         return e => this.setState({ [field]: e.currentTarget.value })
     }
 
-    demoUser() {
-        let randomEmail =  
+    demoUser(e) {
+        e.preventDefault()
+        this.setState({
+            email: "guest@glossier.io",
+            password: "password",
+            first_name: "guest",
+            last_name: "user"
+        }, () => this.props.login(this.state));
 
-        this.setState({ email: "guest@aa.io", password: "password", first_name: "guest", last_name: "user" }, 
-        () => this.props.processForm(this.state))
-        
         if (this.props.currentUser) {
             this.props.openModal('account')
         }
@@ -92,7 +98,7 @@ class SessionSignupForm extends React.Component {
                 <div className="sign-in-button">{this.props.otherForm}</div>
                 <br/>
                 <br/>
-                <button className="demo-button" onClick={() => this.demoUser()}>Demo User Sign in</button>
+                <button className="demo-button" onClick={this.demoUser}>Demo User Sign In</button>
                 <div onClick={this.props.closeModal} className="close-x">X</div>
             </div>
         )

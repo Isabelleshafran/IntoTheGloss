@@ -6,8 +6,7 @@ import { Link } from 'react-router-dom'
 class Header extends React.Component {
     constructor(props) {
         super(props);
-        
-        // this.handleClick = this.handleClick.bind(this);
+    
     }
 
     handleClick() {
@@ -23,7 +22,7 @@ class Header extends React.Component {
     render() { 
         return ( 
             <div className="main-header">
-                <Link to="/"><main className="logo">IntoTheGloss.</main></Link>
+                <Link to="/"><div className="glossier">IntoTheGloss.</div></Link>
                 <div onClick={() => this.handleClick()}><i className="far fa-user"></i></div>
             </div>
          );

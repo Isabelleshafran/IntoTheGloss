@@ -1,23 +1,46 @@
 
-.logo {
-    display: flex;
+.glossier {
     font-weight: bold;
-    justify-content: center;
+    // border: 1px solid black;
+    // float: center;
+    // align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-self: center;
+    // position: absolute;
+    // text-align: center;
+   position: relative; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-header {
-    padding: 10px 0;
+    padding: 1%;
     font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight: 400;
     font-size: 100%;
     color: #000;
     line-height: 1.5;
+    // border: 1px solid black;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // position: absolute;
+    // display: flex;
+    // flex-direction: row;
 }
 
-
 i.far.fa-user {
-    color: black;
-    height: 5px;
-    width: 5px;
-    cursor: pointer;
+    // border: 1px solid black;
+    padding: 0px 4px;
+    // display: inline-block;
+    width: 10%;
+    // display: flex;
+    // justify-content: right;
+    // float: right;
+    // align-self: right;
+    // float: right;
+    // text-align: right;
 }

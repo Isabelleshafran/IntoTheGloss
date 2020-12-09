@@ -13,7 +13,7 @@ class SessionSignupForm extends React.Component {
 
     componentDidMount(){
         // clear errors 
-        
+        this.setState({ errors: "" })
     }
 
     handleSubmit(e) {
@@ -59,47 +59,52 @@ class SessionSignupForm extends React.Component {
         return (
             <div className="signup-form-container">
                 <form onSubmit={this.handleSubmit} className="signup-form-box">
-                    <span>Sign up</span>
+                    <span>Create an Account</span>
                     {this.renderErrors()}
+                    <br/>
                     <div className="signup-form">
-                        <br />
-                        <label>First Name:
+                        <label>
                             <br/>
                             <input type="text" 
                             value={this.state.first_name} 
+                            placeholder="First Name"
                             onChange={this.handleChange('first_name')} 
-                            className="signup-input"/>
+                            className="fname-input"/>
                         </label>
-                        <br/>
-                        <label>Last Name: 
-                            <br/>
+
+                        <label> 
+            
                             <input type="text" 
                             value={this.state.last_name} 
+                            placeholder="Last Name"
                             onChange={this.handleChange('last_name')} 
-                            className="signup-input"/>
+                            className="lname-input"/>
                         </label>
-                        <br/>
-                        <label>Email Address:
-                            <br/>
+           
+                        <label>
+                     
                             <input type="email" 
                             value={this.state.email} 
+                            placeholder="Email Address"
                             onChange={this.handleChange('email')} 
                             className="signup-input"/>
                         </label>
-                        <br />
-                        <label>Password:
-                            <br/>
+                        <label>
+                    
                             <input type="password" 
                             value={this.state.password} 
+                            placeholder="Password"
                             onChange={this.handleChange('password')} 
                             className="signup-input"/>
                         </label>
                         <br />
-                        <input className="session-submit" type="submit" value={this.props.formType} />
+                        <input className="create-account-submit" type="submit" value={this.props.formType} />
                     </div>
-                    <br/>
+              
                 </form>
-                or
+                <br/>
+                <br/>
+                <div className="sign-in-text">Sign In to glossier.com</div>
                 <div className="sign-in-button">{this.props.otherForm}</div>
                 <br/>
                 <br/>

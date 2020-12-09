@@ -1,28 +1,62 @@
 
 .signup-input, .signin-input {
     padding: 3%;
-    border: 1px solid black;
-    margin: 1px;
-}
-
-
-.create-account-button {
-    padding: 3%;
-    border: 1px solid black;
-    margin: 1px;
-    color: white;
-    background-color: black;
-     display: flex; 
+    border: 1px solid lightgray;
+    width: 83%;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 10px;
+    display: flex;
     justify-content: center;
-    cursor: pointer;
     
 }
 
+.signin-form-container {
+
+}
+
+.sign-in-text {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+
+.fname-input {
+    border: 1px solid lightgray;
+    float: left;
+    margin-left: 23.5px;
+    width: 149px;
+    margin-bottom: 10px;
+
+}
+
+.lname-input {
+    border: 1px solid lightgray;
+    margin-left: 5px;
+    float: left;
+    margin-bottom: 10px;
+    width: 149px;
+}
+
+
+input {
+    padding: 3%;
+}
+
+.signup-form, .signin-form {
+    border-top: 1px solid lightgray;
+}
 
 .sign-in-button {
     padding: 3%;
-    border: 1px solid black;
-    margin: 1px;
+    border: 1px solid lightgray;
+    margin-left: 24px;
+    margin-right: 24px;
     display: flex; 
     justify-content: center;
     cursor: pointer;
@@ -32,26 +66,39 @@ span {
     display: flex; 
     justify-content: center;
     font-weight: bold;
+    margin: 3%;
 }
 
-.session-submit {
-    padding: 3%;
-    border: 1px solid black;
-    margin: 1px;
-    display: flex; 
-    justify-content: center;
-    width: 100%;
-    cursor: pointer;
-}
 
-.demo-button {
-    padding: 3%;
-    border: 1px solid black;
-    margin: 1px;
+.demo-button, .create-account-submit, .session-submit {
     color: white;
     background-color: black;
+    width: 83%;
+     padding: 3%;
+    border: 1px solid lightgray;
+    margin-left: 24px;
+    margin-right: 24px;
     display: flex; 
     justify-content: center;
     cursor: pointer;
-    width: 100%;
+}
+.create-account-button {
+      width: 83%;
+       padding: 3%;
+      border: 1px solid lightgray;
+      margin-left: 24px;
+      margin-right: 24px;
+      display: flex; 
+      justify-content: center;
+      cursor: pointer;
+}
+
+p {
+    width: 83%;
+    padding: 3%;
+    margin-left: 24px;
+    margin-right: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }

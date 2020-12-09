@@ -11,6 +11,12 @@ class SessionSigninForm extends React.Component {
 
     }
 
+    componentDidMount(){
+        // clear errors
+        // this.props.errors.
+        this.setState({ errors: "" })
+    }
+
     handleSubmit(e) {
         e.preventDefault();
         this.props.processForm(this.state);
@@ -59,20 +65,22 @@ class SessionSigninForm extends React.Component {
                 <form onSubmit={this.handleSubmit} className="signin-form-box">
                     <span>Sign in</span>
                     {this.renderErrors()}
+                    <br/>
                     <div className="signin-form">
-                        <br/>
-                        <label>Email Address: 
+                        <label>
                             <br/>
                             <input type="email" 
                             value={this.state.email} 
+                            placeholder="Email Address"
                             onChange={this.handleChange('email')} 
                             className="signin-input"/>
                         </label>
                         <br/>
-                        <label>Password: 
+                        <label>
                             <br/>
                             <input type="password" 
                             value={this.state.password} 
+                            placeholder="Password"
                             onChange={this.handleChange('password')} 
                             className="signin-input"/>
                         </label>
@@ -81,7 +89,7 @@ class SessionSigninForm extends React.Component {
                     </div>
                     <br/>
                 </form>
-                or
+                <p>Get free Glossier credit for referring friends and save payment information for easier purchasing</p>
                 <div className="create-account-button">{this.props.otherForm}</div>
                 <br/>
                 <br/>

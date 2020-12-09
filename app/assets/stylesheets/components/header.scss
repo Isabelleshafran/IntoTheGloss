@@ -8,9 +8,13 @@
 .main-header {
     font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 100%;
-    
-    // position: fixed;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    background-color: white;
+    // padding-top: 60px;
     border-bottom: .5px solid lightgray;
+
 }
 
 .top-header {
@@ -22,7 +26,7 @@
     justify-content: space-between;
     margin-top: 30px;
     // position: fixed;
-
+    
 
 }
 
@@ -51,6 +55,7 @@ i.far.fa-user {
 
 i.fas.fa-search {
     margin-left: 75px;
+    cursor: pointer;
   
 }
 
@@ -58,6 +63,3 @@ i.far.fa-user:hover, i.fas.fa-search:hover, .close-x:hover {
     color: rgb(85, 85, 255)
 }
 
-i.fas.fa-search {
-    cursor: pointer;
-}

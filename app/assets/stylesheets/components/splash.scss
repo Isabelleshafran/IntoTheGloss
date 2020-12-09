@@ -20,13 +20,14 @@
 .hero {
     display: flex;
     font-family: "Apercu Pro", -apple-system, BlinkMacSystemFont, Helvetica, "Helvetica Neue", Arial, sans-serif;
-   
+   padding-top: 50px;
 }
 
 .boy-brow-copy {
     font-size: 40px;
     width: 63%;
     margin-top: 350px;
+    margin-bottom: 30px;
     // border: 1px solid black;
     
 }
@@ -40,5 +41,29 @@
     cursor: pointer;
     border-radius: 5%;
     justify-content: center;
+    
 }
+
+.boy-brow-shop-now:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.pink-masthead {
+    margin-top: 60px;
+    padding: 3%;
+    background-color: rgb(250, 242, 244);
+    font-family: "Freight Display", Athelas, Constantias, Georgia, Times, "Times New Roman", serif;
+    font-weight: 300;
+   
+}
+
+.pink-masthead > h1 {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+// .pink-masthead > h3 {
+
+// }
 

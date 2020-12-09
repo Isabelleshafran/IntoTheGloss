@@ -14,7 +14,7 @@
  */
 
 /* CSS Reset */
-@import "base/_reset";
+@import "base/_reset.scss";
 
 /* // Core */
 /* @import "base/colors.scss";
@@ -22,10 +22,10 @@
 @import "base/layout.scss"; */
 
 /* // Components */
-@import "components/modal";
-@import "components/header";
-@import "components/session_form";
-@import "components/account_info.css"
+@import "components/modal.scss";
+@import "components/header.scss";
+@import "components/session_form.scss";
+@import "components/account_info.scss"
 
 
 

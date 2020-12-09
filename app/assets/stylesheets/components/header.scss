@@ -1,18 +1,42 @@
 
 .glossier {
     font-weight: bold;
+    font-size: 20px;
 }
 
 .main-header {
-    padding: 1%;
     font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 100%;
+    
+    position: sticky;
+    border-bottom: .5px solid lightgray;
+}
+
+.top-header {
     font-weight: 400;
     font-size: 100%;
     color: #000;
     line-height: 1.5;
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 30px;
+
+}
+
+.bottom-header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 38%;
+    margin-right: 38%;
+    margin-bottom: 1%;
+
+}
+
+
+.shop-all:hover, .skincare:hover, .makeup:hover, .body:hover {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(85, 85, 255)
 }
 
 i.far.fa-user {

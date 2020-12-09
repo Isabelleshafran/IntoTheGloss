@@ -8,7 +8,7 @@
     font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 100%;
     
-    position: sticky;
+    // position: fixed;
     border-bottom: .5px solid lightgray;
 }
 
@@ -20,6 +20,8 @@
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    // position: fixed;
+
 
 }
 

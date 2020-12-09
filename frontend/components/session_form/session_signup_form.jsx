@@ -11,6 +11,11 @@ class SessionSignupForm extends React.Component {
 
     }
 
+    componentDidMount(){
+        // clear errors 
+        
+    }
+
     handleSubmit(e) {
         e.preventDefault();
         this.props.processForm(this.state)

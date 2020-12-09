@@ -11,11 +11,11 @@ class SessionSigninForm extends React.Component {
 
     }
 
-    componentDidMount(){
-        // clear errors
-        // this.props.errors.
-        this.setState({ errors: "" })
-    }
+    // componentDidMount(){
+    //     return () => this.props.resetForm
+    // }
+
+  
 
     handleSubmit(e) {
         e.preventDefault();
@@ -64,7 +64,6 @@ class SessionSigninForm extends React.Component {
             <div className="signin-form-container">
                 <form onSubmit={this.handleSubmit} className="signin-form-box">
                     <span>Sign in</span>
-                    {this.renderErrors()}
                     <br/>
                     <div className="signin-form">
                         <label>
@@ -75,15 +74,15 @@ class SessionSigninForm extends React.Component {
                             onChange={this.handleChange('email')} 
                             className="signin-input"/>
                         </label>
-                        <br/>
                         <label>
-                            <br/>
+                   
                             <input type="password" 
                             value={this.state.password} 
                             placeholder="Password"
                             onChange={this.handleChange('password')} 
                             className="signin-input"/>
                         </label>
+                        <div className="errors">{this.renderErrors()}</div>
                         <br/>
                         <input className="session-submit" type="submit" value={this.props.formType} />
                     </div>

@@ -11,10 +11,10 @@ class SessionSignupForm extends React.Component {
 
     }
 
-    componentDidMount(){
-        // clear errors 
-        this.setState({ errors: "" })
-    }
+    // componentDidMount() {
+    //     return () => this.props.resetForm
+    // }
+
 
     handleSubmit(e) {
         e.preventDefault();
@@ -60,7 +60,6 @@ class SessionSignupForm extends React.Component {
             <div className="signup-form-container">
                 <form onSubmit={this.handleSubmit} className="signup-form-box">
                     <span>Create an Account</span>
-                    {this.renderErrors()}
                     <br/>
                     <div className="signup-form">
                         <label>
@@ -97,6 +96,7 @@ class SessionSignupForm extends React.Component {
                             onChange={this.handleChange('password')} 
                             className="signup-input"/>
                         </label>
+                        <div className="errors">{this.renderErrors()}</div>
                         <br />
                         <input className="create-account-submit" type="submit" value={this.props.formType} />
                     </div>

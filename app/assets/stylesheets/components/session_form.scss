@@ -1,5 +1,5 @@
 
-.signup-input, .signin-input {
+.signup-input  {
     padding: 3%;
     border: 1px solid lightgray;
     width: 83%;
@@ -11,9 +11,22 @@
     
 }
 
-.signin-form-container {
-
+.signup-input, .signin-input, .fname-input, .lname-input {
+    border-radius: 5%;
 }
+
+.signin-input {
+    padding: 3%;
+    border: 1px solid lightgray;
+    width: 83%;
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+}
+
 
 .sign-in-text {
     display: flex;
@@ -43,6 +56,16 @@
     width: 149px;
 }
 
+.errors {
+    display: flex;
+    justify-content: center;
+    color: rgb(187, 70, 70);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
 
 input {
     padding: 3%;
@@ -60,6 +83,8 @@ input {
     display: flex; 
     justify-content: center;
     cursor: pointer;
+    border-radius: 5%;
+
 }
 
 span {
@@ -67,6 +92,7 @@ span {
     justify-content: center;
     font-weight: bold;
     margin: 3%;
+    
 }
 
 
@@ -81,6 +107,8 @@ span {
     display: flex; 
     justify-content: center;
     cursor: pointer;
+    border-radius: 5%;
+
 }
 .create-account-button {
       width: 83%;
@@ -91,6 +119,8 @@ span {
       display: flex; 
       justify-content: center;
       cursor: pointer;
+    border-radius: 5%;
+
 }
 
 p {
@@ -98,7 +128,7 @@ p {
     padding: 3%;
     margin-left: 24px;
     margin-right: 24px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
 }

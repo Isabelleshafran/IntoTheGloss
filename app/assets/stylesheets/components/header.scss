@@ -1,19 +1,6 @@
 
 .glossier {
     font-weight: bold;
-    // border: 1px solid black;
-    // float: center;
-    // align-items: center;
-    // display: flex;
-    // justify-content: center;
-    // align-self: center;
-    // position: absolute;
-    // text-align: center;
-   position: relative; 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 .main-header {
@@ -23,24 +10,27 @@
     font-size: 100%;
     color: #000;
     line-height: 1.5;
-    // border: 1px solid black;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // position: absolute;
-    // display: flex;
-    // flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 i.far.fa-user {
-    // border: 1px solid black;
     padding: 0px 4px;
-    // display: inline-block;
-    width: 10%;
-    // display: flex;
-    // justify-content: right;
-    // float: right;
-    // align-self: right;
-    // float: right;
-    // text-align: right;
+    cursor: pointer;
+    height: 50px;
+    margin-right: 75px;
+}
+
+i.fas.fa-search {
+    margin-left: 75px;
+  
+}
+
+i.far.fa-user:hover, i.fas.fa-search:hover, .glossier:hover, .close-x:hover {
+    color: rgb(85, 85, 255)
+}
+
+i.fas.fa-search {
+    cursor: pointer;
 }

@@ -15,6 +15,10 @@ class Splash extends React.Component {
                     <img className="right-hero"src={window.right_hero} />
                 </div>
                     <img className="g-png" src={window.glossier_g} />
+                <div>
+                    <h3 className="boy-brow-copy">Boy Brow is back.</h3>
+                    <button><Link to={"/"} className="boy-brow-shop-now">Shop now</Link></button>
+                </div>
             </div>
          ); 
     }

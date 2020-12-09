@@ -11,9 +11,9 @@ class SessionSignupForm extends React.Component {
 
     }
 
-    // componentDidMount() {
-    //     return () => this.props.resetForm
-    // }
+    componentDidMount() {
+        this.props.removeErrors()
+    }
 
 
     handleSubmit(e) {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 class Account extends React.Component {
@@ -18,8 +19,8 @@ class Account extends React.Component {
                 <main className="your-account">Your Account</main>
                 <br/>
                 <ul>Orders</ul>
-                <ul>Shipping Addresses</ul>
-                <ul>Payments and Credits</ul>
+                <ul><Link to={"https://github.com/Isabelleshafran/IntoTheGloss"}>GitHub</Link></ul>
+                <ul>Linkedin</ul>
                 <ul>Refer a Friend</ul>
                 <ul className="account-signout" onClick={() => this.handleClick()}>Sign Out</ul>
                 <div onClick={this.props.closeModal} className="close-x">X</div>
@@ -29,3 +30,4 @@ class Account extends React.Component {
 }
  
 export default Account;
+

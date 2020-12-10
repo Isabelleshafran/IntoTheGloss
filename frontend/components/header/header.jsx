@@ -30,7 +30,7 @@ class Header extends React.Component {
                         <div onClick={() => this.handleClick()}><i className="far fa-user"></i></div>
                     </div>
                     <div className="bottom-header">
-                        <Link to="/"><div className="shop-all">Shop All</div></Link>
+                        <Link to="/shopall"><div className="shop-all">Shop All</div></Link>
                         <Link to="/"><div className="skincare">Skincare</div></Link>
                         <Link to="/"><div className="makeup">Makeup</div></Link>
                         <Link to="/"><div className="body">Body</div></Link>

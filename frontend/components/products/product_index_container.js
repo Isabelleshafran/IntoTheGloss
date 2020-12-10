@@ -1,16 +1,23 @@
 import { connect } from 'react-redux';
-import { fetchProducts } from '../../util/product_api_util';
+import { fetchProducts } from '../../actions/product_actions';
 import ProductIndex from './product_index';
 import { asArray } from '../../reducers/selectors';
 
 
-const msp = (state) => ({
-    products: asArray(state.entities)
-})
+const msp = (state) => {
+ 
+    return ({
+        products: asArray(state.entities)
+    })
+}
 
-const mdp = (dispatch) => ({
-    fetchProducts: () => dispatch(fetchProducts())
-})
+
+
+const mdp = (dispatch) => {
+    return ({
+        fetchProducts: () => dispatch(fetchProducts())
+    })
+}
 
 export default connect(msp, mdp)(ProductIndex)
 

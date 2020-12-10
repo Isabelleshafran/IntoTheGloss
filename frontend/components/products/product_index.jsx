@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom'
 import ProductIndexItem from './product_index_item'
 
 
@@ -8,8 +9,11 @@ class ProductIndex extends React.Component {
         
     }
 
+    // this.props.history.push('/shopall')
+
     componentDidMount(){
-        this.props.fetchProducts()
+        // this.props.history.push('/shopall')
+        this.props.fetchProducts()  
     }
 
     render() { 
@@ -24,5 +28,5 @@ class ProductIndex extends React.Component {
     }
 }
  
-export default ProductIndex;
+export default (ProductIndex);
 

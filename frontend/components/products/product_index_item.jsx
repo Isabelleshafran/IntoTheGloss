@@ -1,4 +1,4 @@
-
+import { withRouter } from 'react-router-dom'
 import React from 'react';
 
 class ProductIndexItem extends React.Component {
@@ -15,4 +15,4 @@ class ProductIndexItem extends React.Component {
     }
 }
  
-export default ProductIndexItem;
+export default (ProductIndexItem);

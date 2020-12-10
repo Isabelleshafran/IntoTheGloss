@@ -19,9 +19,10 @@ const App = () => (
             <Modal />
             <HeaderContainer />
         </header>
-    <Switch>
-        <Route exact path="/shopall" component={ProductIndexContainer} />
-    </Switch>
+        <Switch>
+            <Route exact path="/shopall" component={ProductIndexContainer} />
+            <Route path="/" component={HeaderContainer} />
+        </Switch>
     </div>
 );
 

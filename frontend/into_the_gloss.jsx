@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import {login, signup, logout } from './actions/session_actions'
-import { fetchProducts, fetchProduct } from './util/product_api_util'
+import { fetchProducts, fetchProduct } from './actions/product_actions'
 import configureStore from './store/store'
 import Root from './components/root';
 

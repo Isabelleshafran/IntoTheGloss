@@ -15,6 +15,9 @@ class ProductIndexItem extends React.Component {
                 <div className="product-index-title">
                     {product.title}
                 </div>
+                <div className="product-index-image">
+                    {/* {product.img_url} */}
+                </div>
                 <div className="product-index-description">
                     {product.description}, 
                 </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {login, signup, logout } from './actions/session_actions'
+// import {login, signup, logout } from './actions/session_actions'
+import { fetchProducts, fetchProduct } from './util/product_api_util'
 import configureStore from './store/store'
 import Root from './components/root';
 
@@ -25,9 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // testing 
     window.getState = store.getState;
     window.dispatch = store.dispatch;
-    window.login = login 
-    window.signup = signup 
-    window.logout = logout
+    // window.login = login 
+    // window.signup = signup 
+    // window.logout = logout
+        window.fetchProducts = fetchProducts
+        window.fetchProduct = fetchProduct
     // testing 
 
     const root = document.getElementById("root")

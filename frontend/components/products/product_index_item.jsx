@@ -7,12 +7,23 @@ class ProductIndexItem extends React.Component {
         
     }
     render() { 
+        // debugger
+        const { product } = this.props
         return (
-            <div>
-                {this.props.product.title}
+            <div className="product-index">
+                
+                <div className="product-index-title">
+                    {product.title}
+                </div>
+                <div className="product-index-description">
+                    {product.description}, 
+                </div>
+                <div className="product-index-price">
+                    ${product.price}
+                </div>
             </div>
           );
     }
 }
  
-export default (ProductIndexItem);
+export default ProductIndexItem;

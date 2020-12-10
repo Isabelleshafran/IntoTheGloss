@@ -7,7 +7,8 @@ import { asArray } from '../../reducers/selectors';
 const msp = (state) => {
  
     return ({
-        products: asArray(state.entities)
+        // products: asArray(state.entities)
+        products: Object.values(state.entities.products)
     })
 }
 

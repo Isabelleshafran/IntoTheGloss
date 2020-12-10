@@ -36,7 +36,7 @@ class Header extends React.Component {
                         <Link to="/"><div className="body">Body</div></Link>
                     </div>
                 </nav>
-                <SplashContainer />
+                {/* <SplashContainer /> */}
             </div>
          );
     }

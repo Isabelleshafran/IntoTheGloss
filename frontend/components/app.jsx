@@ -1,6 +1,6 @@
 import React from "react";
 import {
-    Route,
+    Route, 
     Redirect,
     Switch,
     Link,
@@ -11,17 +11,16 @@ import Modal from './modal/modal';
 import HeaderContainer from './header/header_container'
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import ProductIndexContainer from "./products/product_index_container";
-
+import SplashContainer from './splash/splash_container'
 
 const App = () => (
     <div>
-        <header>
-            <Modal />
-            <HeaderContainer />
-        </header>
+        <HeaderContainer />
+        <Modal />
         <Switch>
+            <Route exact path="/" component={SplashContainer}/>
             <Route exact path="/shopall" component={ProductIndexContainer} />
-            <Route path="/" component={HeaderContainer} />
+            <Redirect to="/" />
         </Switch>
     </div>
 );

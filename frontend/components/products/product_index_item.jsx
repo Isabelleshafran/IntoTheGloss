@@ -8,16 +8,12 @@ class ProductIndexItem extends React.Component {
         
     }
     render() { 
-        // debugger
-        // co
-        console.log(this.props)
         const { product } = this.props
         return (
             <div className="product-index">
                 
                 <div className="product-index-title">
                     <Link to={`/${this.props.category}/${product.id}`}>{product.title}</Link>
-                    {/* {product.title} */}
                 </div>
                 <div className="product-index-description">
                     {product.description}, 

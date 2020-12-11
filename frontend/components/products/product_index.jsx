@@ -14,22 +14,19 @@ class ProductIndex extends React.Component {
 
     componentDidMount(){
         this.props.fetchProducts(this.props.category)  
+        
 
-        // setTimeout(() => {
-        //     this.props.fetchProducts(this.props.category)
-        // }, 2000);
-        // set time out 
-
-        // console.log(this.state)
     }
 
-    componentDidUpdate(){
-        // check if url is different look at pokdex!
-        // if different fetchProducts else .....might need to grab from url 
+    componentDidUpdate(prevProps){
+        if(prevProps.match.path !== this.props.match.path) {
+            this.props.fetchProducts(this.props.category)
+        }
     }
 
 
     render() { 
+        console.log(this.props)
         const { products } = this.props;
         return ( 
             <div className="products">

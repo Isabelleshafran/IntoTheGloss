@@ -1,9 +1,11 @@
 
 .g-png {
-    width: 12%; 
-    height: 12%;
-    margin-top: 150px;
-    margin-left: 24%;
+    width: 150px; 
+    height: 150px;
+    margin-top: 175px;
+    margin-left: 73%;
+    // border: 1px solid black;
+    position: absolute;
 }
 
 .right-hero {
@@ -12,8 +14,8 @@
 
 .hero-images {
     display: flex;
-    width: 30%;
-    margin-left: 10%;
+    width: 35%;
+    margin-left: 8%;
     height: 850px;
 }
 
@@ -24,22 +26,29 @@
 }
 
 .boy-brow-copy {
-    font-size: 40px;
-    width: 63%;
+    font-size: 48px;
+    line-height: 48px;
+    width: 250px;
     margin-top: 350px;
     margin-bottom: 30px;
+    margin-left: 210%;
+
+    font-weight: bold;
     // border: 1px solid black;
+    
     
 }
 
 .boy-brow-shop-now {
     color: white;
     background-color: black;
-    width: 200px;
-    padding: 8%;
+    width: 240px;
+    padding: 9%;
     display: flex; 
     cursor: pointer;
     border-radius: 5%;
+    margin-left: 215%;
+    // margin-right: 100%;
     justify-content: center;
     
 }

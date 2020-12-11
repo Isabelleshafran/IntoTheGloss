@@ -35,7 +35,6 @@ c3 = Category.create!(
 
 p1 = Product.create!(
     title: "The Skincare Edit",
-    img_url: "https://images.ctfassets.net/p3w8f4svwgcg/4E7T6gHDOnlznnRLYc0icG/efc2979720cda036c6b490dc52a90409/02.jpg?w=1400&q=80&fm=webp", 
     description: "mini skincare essentials", 
     details: "A full Glossier skincare routine, in irresistible miniature sizes.
     What it is: Back by popular demand! Our skincare bestsellers in miniature sizes, plus a soft, stretchy pink logo headband—to give or to keep.", 
@@ -45,7 +44,6 @@ p1 = Product.create!(
 
 p2 = Product.create!(
     title: "The 3-Step Skincare Routine",
-    img_url: "https://images.ctfassets.net/p3w8f4svwgcg/7HH4KlaJsl15RCmQSMtD94/b2e464af98afc3b5722844db08f3da17/skincare-set_1.jpg?w=1400&q=80&fm=webp", 
     description: "cleanser + moisturizer + lip balm", 
     details: "The non-negotiables.
     What it is: If you only use three products a day, these are the ones: our iconic face wash + versatile, buildable moisturizer + bestselling lip balm.", 
@@ -55,7 +53,6 @@ p2 = Product.create!(
 
 p3 = Product.create!(
     title: "Milk Jelly Cleanser",
-    img_url: "https://images.ctfassets.net/p3w8f4svwgcg/4yaPsX1SaYpFfGjaOxy0yt/39601e753821ef7459069d6ad198f043/MilkyJelly_Carousel_1.jpg?w=1400&q=80&fm=webp", 
     description: "conditioning face wash", 
     details: "Everything a cleanser should be. What it is: A gentle-yet-effective creamy gel face wash for all skin types", 
     price: 9, 
@@ -64,7 +61,6 @@ p3 = Product.create!(
 
 p4 = Product.create!(
     title: "Futuredew",
-    img_url: "https://images.ctfassets.net/p3w8f4svwgcg/TzjodgY4c7VPMYG5ExXpk/96d2cad935c43ddfee95b58244ee871f/3.png?w=1400&q=80&fm=webp", 
     description: "oil serum hybrid", 
     details: "An instant dewy glow that lasts.
     What it is: A shortcut to the way your skin looks after a full skincare routine—dewy, glowing, cared-for—in one long-wearing product", 
@@ -73,18 +69,16 @@ p4 = Product.create!(
 )
 
 p5 = Product.create!(
-    title: "Futuredew",
-    img_url: "https://images.ctfassets.net/p3w8f4svwgcg/TzjodgY4c7VPMYG5ExXpk/96d2cad935c43ddfee95b58244ee871f/3.png?w=1400&q=80&fm=webp", 
-    description: "oil serum hybrid", 
-    details: "An instant dewy glow that lasts.
-    What it is: A shortcut to the way your skin looks after a full skincare routine—dewy, glowing, cared-for—in one long-wearing product", 
+    title: "Solution",
+    description: "exfoliating skin perfector", 
+    details: "Transforms the look of skin in four weeks.
+    What it is: A gentle way to slough away dead skin to reveal a fresh, smooth complexion", 
     price: 24, 
     category_id: c1.id
 )
 
 p6 = Product.create!(
     title: "Boy Brow",
-    img_url: "https://images.ctfassets.net/p3w8f4svwgcg/2HNEsucEUavVW1XwhBGCdz/524ce95ba277fec17df5d052d6665502/BoyBrow_0_1.jpg?w=1400&q=80&fm=webp", 
     description: "grooming pomade", 
     details: "Fluffy, instantly groomed brows.
     What it is: A brushable, creamy wax that visibly thickens, shapes, and grooms brows into place", 
@@ -94,7 +88,6 @@ p6 = Product.create!(
 
 p7 = Product.create!(
     title: "Cloud Paint",
-    img_url: "https://images.ctfassets.net/p3w8f4svwgcg/3pkpOFantfCIBFBEZZmUKE/eba8dd3906d5e7502b902d652ebe559a/CloudPaint.jpg?w=1400&q=80&fm=webp", 
     description: "seamless cheek color", 
     details: "The most user-friendly blush under the sun.
     What it is: A seamless, buildable gel-cream blush that’s enjoyable to apply and easy to wear.", 
@@ -104,7 +97,6 @@ p7 = Product.create!(
 
 p8 = Product.create!(
     title: "Generation G",
-    img_url: "https://images.ctfassets.net/p3w8f4svwgcg/7Myi1KRjNUbF3bXMg36Zvn/805069069a0eb317e62034aa8d628248/GenG_Mekdes_Zip__1_.jpg?w=1400&q=80&fm=webp", 
     description: "sheer matte lipstick", 
     details: "A new generation of lipstick.
     What it is: A lip color that gives the look and finish of just-blotted lipstick, without the blot", 
@@ -114,7 +106,6 @@ p8 = Product.create!(
 
 p9 = Product.create!(
     title: "Lip Gloss",
-    img_url: "https://images.ctfassets.net/p3w8f4svwgcg/705MKGCRqSWB06YrGHR6Fx/726a4b41f0b0a8178763de28eff91e86/01_Lipgloss_Carousel_lipgloss_hand.jpg?w=1400&q=80&fm=webp", 
     description: "cushiony glassy shine", 
     details: "High shine without the stickiness.
     What it is: A comfortable, long-wearing lip gloss with a glassy finish", 
@@ -125,7 +116,6 @@ p9 = Product.create!(
 
 p10 = Product.create!(
     title: "Body Hero Exfoliating Bar",
-    img_url: "https://static-assets.glossier.com/production/spree/images/attachments/000/005/527/portrait_normal/exfoliating-bar_2-hover_(1).jpg?1602121843=&w=600&q=80&fm=webp", 
     description: "exfoliating bar", 
     details: "You’re going to be so smooth.
     What it is: Our ergonomically designed, no-mess body scrub fits in the palm of your hand and sloughs away dead skin and dryness—revealing soft, baby-smooth skin.", 
@@ -135,7 +125,6 @@ p10 = Product.create!(
 
 p11 = Product.create!(
     title: "Hand Cream",
-    img_url: "https://static-assets.glossier.com/production/spree/images/attachments/000/005/228/portrait_normal/HandCream_ShopGrid_1-main.jpg?1587494542=&w=600&q=80&fm=webp", 
     description: "creme pour les mains", 
     details: "Always have hydration on hand.    
     What it is: Supercharged moisture in a palm-sized pod with sleek curves and 360º squeeze.", 
@@ -145,7 +134,6 @@ p11 = Product.create!(
 
 p12 = Product.create!(
     title: "Body Hero Daily Perfecting Cream",
-    img_url: "https://images.ctfassets.net/p3w8f4svwgcg/16EoxRAV6CYxaGszyfFJDs/418dbdce54086dc7f0a5dc0d75fffbc0/BodyHeroCream.jpg?w=1400&q=80&fm=webp", 
     description: "daily perfecting cream", 
     details: "A skincare-grade body lotion.
     What it is: A body cream inspired by face products—that does more than just moisturize", 

@@ -13,7 +13,7 @@
 #  updated_at  :datetime         not null
 #
 class Product < ApplicationRecord
-    validates :title, :img_url, :description, :details, :price, :category_id, presence: true
+    validates :title, :description, :details, :price, :category_id, presence: true
 
     belongs_to :category, 
         foreign_key: :category_id, 

@@ -10,7 +10,7 @@
 #  updated_at :datetime         not null
 #
 class Shade < ApplicationRecord
-    validates :name, :img_url, :product_id, presence: true; 
+    validates :name, :product_id, presence: true; 
 
     belongs_to :product, 
         foreign_key: :product_id, 

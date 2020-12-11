@@ -41,7 +41,7 @@ p1 = Product.create!(
     What it is: Back by popular demand! Our skincare bestsellers in miniature sizes, plus a soft, stretchy pink logo headband—to give or to keep.", 
     price: 50, 
     category_id: c1.id 
-
+)
 
 p2 = Product.create!(
     title: "The 3-Step Skincare Routine",
@@ -105,7 +105,7 @@ p7 = Product.create!(
 p8 = Product.create!(
     title: "Generation G",
     img_url: "https://images.ctfassets.net/p3w8f4svwgcg/7Myi1KRjNUbF3bXMg36Zvn/805069069a0eb317e62034aa8d628248/GenG_Mekdes_Zip__1_.jpg?w=1400&q=80&fm=webp", 
-    description: "sheer matte lipstic", 
+    description: "sheer matte lipstick", 
     details: "A new generation of lipstick.
     What it is: A lip color that gives the look and finish of just-blotted lipstick, without the blot", 
     price: 18, 

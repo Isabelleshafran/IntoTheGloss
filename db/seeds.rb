@@ -44,7 +44,12 @@ p1 = Product.create!(
 )
 
 # file = open('https://<your_bucket>.<your_region>.amazonaws.com/<optional_folder_name>/<some_file>.jpg')
-# demo_user.avatar.attach(io: file, filename: 'some_file.jpg')
+# amazon link from pic in bucket
+# image is the assoction
+# product.image.attach(io: file, filename: 'some_file.jpg')
+
+# index will pull first picture 
+# show will display all of the pictures 
 
 p2 = Product.create!(
     title: "The 3-Step Skincare Routine",

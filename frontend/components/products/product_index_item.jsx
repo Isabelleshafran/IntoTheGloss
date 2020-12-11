@@ -25,5 +25,7 @@ class ProductIndexItem extends React.Component {
           );
     }
 }
+
+// imgUrl 
  
 export default ProductIndexItem;

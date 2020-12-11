@@ -15,11 +15,15 @@ class Splash extends React.Component {
                         <img className="left-hero" src={window.left_hero} />
                         <img className="right-hero"src={window.right_hero} />
                     </div>
+                    <div className="hero-copy">
                         <img className="g-png" src={window.glossier_g} />
-                    <div>
                         <h3 className="boy-brow-copy">Boy Brow is back.</h3>
                         <button><Link to={"/makeup/54"} className="boy-brow-shop-now">Shop now</Link></button>
+                    {/* </div>
+                    <div className="boy-brow-copy"> */}
                     </div>
+                    {/* <div >  */}
+                    {/* </div> */}
                 </div>
                 <div className="pink-masthead">
                     <h1>Beauty inspired by real life.</h1>

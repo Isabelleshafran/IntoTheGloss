@@ -1,14 +1,14 @@
 import { connect } from 'react-redux';
 import { fetchProducts } from '../../actions/product_actions';
 import ProductIndex from './product_index';
-import { asArray } from '../../reducers/selectors';
 
 
-const msp = (state) => {
+
+const msp = (state, ownProps) => {
  
     return ({
-        // products: asArray(state.entities)
-        products: Object.values(state.entities.products)
+        products: Object.values(state.entities.products),
+        category: ownProps.match.path.slice(1)
     })
 }
 
@@ -16,7 +16,7 @@ const msp = (state) => {
 
 const mdp = (dispatch) => {
     return ({
-        fetchProducts: () => dispatch(fetchProducts())
+        fetchProducts: (name) => dispatch(fetchProducts(name)),
     })
 }
 

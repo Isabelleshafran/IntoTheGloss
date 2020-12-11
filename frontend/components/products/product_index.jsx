@@ -7,28 +7,37 @@ class ProductIndex extends React.Component {
     constructor(props) {
         super(props);
         
+        // this.state = this.props.category
     }
 
-    // this.props.history.push('/shopall')
+
 
     componentDidMount(){
-        // this.props.history.push('/shopall')
-        // this is working bc when i click shop all this is invoked (if i comment it out no action dispatched)
-        this.props.fetchProducts()  
+        this.props.fetchProducts(this.props.category)  
+
+        // setTimeout(() => {
+        //     this.props.fetchProducts(this.props.category)
+        // }, 2000);
+        // set time out 
+
+        // console.log(this.state)
     }
 
-    // hello shows up at the bottom of the page??
+    componentDidUpdate(){
+        // check if url is different look at pokdex!
+        // if different fetchProducts else .....might need to grab from url 
+    }
+
 
     render() { 
         const { products } = this.props;
-        // debugger
         return ( 
             <div className="products">
-                <h1>Shop All Products</h1>
-                {/* Shop All Products */}
+
+                <h1>{this.props.category}</h1>
                 {products.map(product => {
                     return (
-                     <ProductIndexItem key={product.id} product={product} />   
+                     <ProductIndexItem key={product.id} product={product} category={this.props.category}/>   
                     )
                 })}
             </div>
@@ -39,7 +48,3 @@ class ProductIndex extends React.Component {
 export default ProductIndex;
 
 
-
-// two issues 
-//  1 - not rendering products 
-// 2 - doesnt go to another page (shows up athe bottom of the splash page)

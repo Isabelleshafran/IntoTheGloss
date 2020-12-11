@@ -8,6 +8,7 @@
 
 
 User.destroy_all 
+Category.delete_all
 Product.delete_all
 
 guest = User.create!(email: "guest@glossier.io", password: "password", first_name: "guest", last_name: "user")
@@ -16,16 +17,20 @@ guest = User.create!(email: "guest@glossier.io", password: "password", first_nam
 # Makeup = category 2
 # Body = category 3
 
+c4 = Category.create!(
+    name: 'shopall'
+)
+
 c1 = Category.create!(
-    name: "Skincare"
+    name: "skincare"
 )
 
 c2 = Category.create!(
-    name: "Makeup"
+    name: "makeup"
 )
 
 c3 = Category.create!(
-    name: "Body"
+    name: "body"
 )
 
 p1 = Product.create!(
@@ -35,8 +40,8 @@ p1 = Product.create!(
     details: "A full Glossier skincare routine, in irresistible miniature sizes.
     What it is: Back by popular demand! Our skincare bestsellers in miniature sizes, plus a soft, stretchy pink logo headband—to give or to keep.", 
     price: 50, 
-    category_id: 1 
-)
+    category_id: c1.id 
+
 
 p2 = Product.create!(
     title: "The 3-Step Skincare Routine",
@@ -45,7 +50,7 @@ p2 = Product.create!(
     details: "The non-negotiables.
     What it is: If you only use three products a day, these are the ones: our iconic face wash + versatile, buildable moisturizer + bestselling lip balm.", 
     price: 40, 
-    category_id: 1 
+    category_id: c1.id
 )
 
 p3 = Product.create!(
@@ -54,7 +59,7 @@ p3 = Product.create!(
     description: "conditioning face wash", 
     details: "Everything a cleanser should be. What it is: A gentle-yet-effective creamy gel face wash for all skin types", 
     price: 9, 
-    category_id: 1 
+    category_id: c1.id
 )
 
 p4 = Product.create!(
@@ -64,7 +69,7 @@ p4 = Product.create!(
     details: "An instant dewy glow that lasts.
     What it is: A shortcut to the way your skin looks after a full skincare routine—dewy, glowing, cared-for—in one long-wearing product", 
     price: 24, 
-    category_id: 1 
+    category_id: c1.id
 )
 
 p5 = Product.create!(
@@ -74,7 +79,7 @@ p5 = Product.create!(
     details: "An instant dewy glow that lasts.
     What it is: A shortcut to the way your skin looks after a full skincare routine—dewy, glowing, cared-for—in one long-wearing product", 
     price: 24, 
-    category_id: 2 
+    category_id: c1.id
 )
 
 p6 = Product.create!(
@@ -84,7 +89,7 @@ p6 = Product.create!(
     details: "Fluffy, instantly groomed brows.
     What it is: A brushable, creamy wax that visibly thickens, shapes, and grooms brows into place", 
     price: 16, 
-    category_id: 2 
+    category_id: c2.id
 )
 
 p7 = Product.create!(
@@ -94,7 +99,7 @@ p7 = Product.create!(
     details: "The most user-friendly blush under the sun.
     What it is: A seamless, buildable gel-cream blush that’s enjoyable to apply and easy to wear.", 
     price: 18, 
-    category_id: 2 
+    category_id: c2.id 
 )
 
 p8 = Product.create!(
@@ -104,7 +109,7 @@ p8 = Product.create!(
     details: "A new generation of lipstick.
     What it is: A lip color that gives the look and finish of just-blotted lipstick, without the blot", 
     price: 18, 
-    category_id: 2 
+    category_id: c2.id 
 )
 
 p9 = Product.create!(
@@ -114,7 +119,7 @@ p9 = Product.create!(
     details: "High shine without the stickiness.
     What it is: A comfortable, long-wearing lip gloss with a glassy finish", 
     price: 14, 
-    category_id: 2 
+    category_id: c2.id 
 )
 
 
@@ -125,7 +130,7 @@ p10 = Product.create!(
     details: "You’re going to be so smooth.
     What it is: Our ergonomically designed, no-mess body scrub fits in the palm of your hand and sloughs away dead skin and dryness—revealing soft, baby-smooth skin.", 
     price: 14, 
-    category_id: 3
+    category_id: c3.id
 )
 
 p11 = Product.create!(
@@ -135,7 +140,7 @@ p11 = Product.create!(
     details: "Always have hydration on hand.    
     What it is: Supercharged moisture in a palm-sized pod with sleek curves and 360º squeeze.", 
     price: 18, 
-    category_id: 3 
+    category_id: c3.id
 )
 
 p12 = Product.create!(
@@ -145,6 +150,6 @@ p12 = Product.create!(
     details: "A skincare-grade body lotion.
     What it is: A body cream inspired by face products—that does more than just moisturize", 
     price: 22, 
-    category_id: 3
+    category_id: c3.id
 )
 

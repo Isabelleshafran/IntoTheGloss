@@ -1,5 +1,5 @@
 .products {
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 .products > h1 {
@@ -7,3 +7,12 @@
     font-weight: bold;
 }
 
+.product-index-title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(85, 85, 255)
+}
+
+.product-index-title {
+    font-weight: bold;
+}

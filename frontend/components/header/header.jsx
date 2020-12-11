@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import SplashContainer from '../splash/splash_container'
 
 
 
@@ -31,12 +30,11 @@ class Header extends React.Component {
                     </div>
                     <div className="bottom-header">
                         <Link to="/shopall"><div className="shop-all">Shop All</div></Link>
-                        <Link to="/"><div className="skincare">Skincare</div></Link>
-                        <Link to="/"><div className="makeup">Makeup</div></Link>
-                        <Link to="/"><div className="body">Body</div></Link>
+                        <Link to="/skincare"><div className="skincare">Skincare</div></Link>
+                        <Link to="/makeup"><div className="makeup">Makeup</div></Link>
+                        <Link to="/body"><div className="body">Body</div></Link>
                     </div>
                 </nav>
-                {/* <SplashContainer /> */}
             </div>
          );
     }

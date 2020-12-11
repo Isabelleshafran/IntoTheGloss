@@ -1,8 +1,16 @@
 class Api::ProductsController < ApplicationController
 
     def index 
-        @products = Product.all
-        render "api/products/index"
+        if params[:name] === 'shopall'
+            @products = Product.all
+            # debugger
+            render "api/products/index"
+            # debugger
+        else 
+            @products = Product.joins(:category).where(categories: { name: params[:name]} )
+            # debugger
+            render "api/products/index"
+        end
     end
 
     def show 

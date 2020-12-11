@@ -22,4 +22,6 @@ class Product < ApplicationRecord
     has_many :shades, 
         foreign_key: :product_id, 
         class_name: :Shade
+
+    has_one_attached :image
 end

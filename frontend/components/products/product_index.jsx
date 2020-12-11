@@ -6,8 +6,6 @@ import ProductIndexItem from './product_index_item'
 class ProductIndex extends React.Component {
     constructor(props) {
         super(props);
-        
-        // this.state = this.props.category
     }
 
 

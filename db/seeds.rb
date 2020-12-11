@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+require 'open-uri'
 
 User.destroy_all 
 Category.delete_all
@@ -41,6 +42,9 @@ p1 = Product.create!(
     price: 50, 
     category_id: c1.id 
 )
+
+# file = open('https://<your_bucket>.<your_region>.amazonaws.com/<optional_folder_name>/<some_file>.jpg')
+# demo_user.avatar.attach(io: file, filename: 'some_file.jpg')
 
 p2 = Product.create!(
     title: "The 3-Step Skincare Routine",

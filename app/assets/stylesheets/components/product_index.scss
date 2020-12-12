@@ -1,10 +1,25 @@
-.products {
-    margin-top: 15%;
-}
 
-.products > h1 {
+
+
+.product-title {
     font-size: 30px;
     font-weight: bold;
+    margin-top: 10%;
+    font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin-left: 3%;
+    font-size: 24px;
+}
+
+.product-index-image {
+  padding: 20px;
+  height: 372px;
+  width: 270px;
+   
+}
+
+.product-index-title {
+    font-weight: bold;
+    // font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .product-index-title:hover {
@@ -13,6 +28,27 @@
     color: rgb(85, 85, 255)
 }
 
-.product-index-title {
-    font-weight: bold;
+.product-index {
+    // border: 1px solid black;
+    background-color: rgb(247, 247, 247);
+    margin: 1%;
 }
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3%;
+    font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
+
+}
+
+.product-index-info {
+    // display: flex;
+}
+
+.product-index-card {
+
+}
+
+
+

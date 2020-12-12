@@ -22,19 +22,32 @@ class ProductIndex extends React.Component {
         }
     }
 
+    title(){
+        if(this.props.category === 'shopall'){
+            return 'Shop All Products'
+        } else if (this.props.category === 'makeup'){
+            return 'Shop All Makeup'
+        } else if (this.props.category === 'skincare') {
+            return 'Shop All Skincare'
+        } else {
+            return 'Shop All Body'
+        }
+    }
+
 
     render() { 
         console.log(this.props)
         const { products } = this.props;
         return ( 
-            <div className="products">
-
-                <h1>{this.props.category}</h1>
-                {products.map(product => {
-                    return (
-                     <ProductIndexItem key={product.id} product={product} category={this.props.category}/>   
-                    )
-                })}
+            <div>
+                <h1 className="product-title">{this.title(this.props.catgory)}</h1>
+                <div className="products">
+                    {products.map(product => {
+                        return (
+                         <ProductIndexItem key={product.id} product={product} category={this.props.category}/>   
+                        )
+                    })}
+                </div>
             </div>
          );
     }

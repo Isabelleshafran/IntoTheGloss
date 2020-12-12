@@ -17,6 +17,7 @@ class ProductShow extends React.Component {
         if(!this.props.product){
             return null
         } else {
+            console.log(this.props)
             return ( 
                 <div className="product-show">
                     {this.props.product.title}
@@ -26,6 +27,12 @@ class ProductShow extends React.Component {
                     {this.props.product.details}
                     <br/>
                     ${this.props.product.price}
+                    <br/>
+                    <div className="product-show-image">
+                        <img src={window.generic_product} />
+                        {/* <img src={this.props.product.imgUrl} alt=""/> */}
+                        {/* {this.props.produc} */}
+                    </div>
                 </div>
              );
         }

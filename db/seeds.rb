@@ -43,10 +43,9 @@ p1 = Product.create!(
     category_id: c1.id 
 )
 
-# file = open('https://<your_bucket>.<your_region>.amazonaws.com/<optional_folder_name>/<some_file>.jpg')
+
 # amazon link from pic in bucket
 # image is the assoction
-# product.image.attach(io: file, filename: 'some_file.jpg')
 
 # index will pull first picture 
 # show will display all of the pictures 
@@ -59,6 +58,11 @@ p2 = Product.create!(
     price: 40, 
     category_id: c1.id
 )
+
+file2 = open('https://intothegloss-seeds.s3-us-west-1.amazonaws.com/skincare_set_edit.jpg')
+p2.image.attach(io: file2, filename: 'skincare_set.png', content_type: 'jpg')
+
+
 
 p3 = Product.create!(
     title: "Milk Jelly Cleanser",

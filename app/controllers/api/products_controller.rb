@@ -8,7 +8,7 @@ class Api::ProductsController < ApplicationController
             # Product.where("product.title LIKE '%'")
             @products = Product.where(:title => ["Futuredew", "Boy Brow", "Cloud Paint", "Hand Cream", "Generation G", "Milk Jelly Cleanser", "Solution"])
             # @products = Product.all
-            render "api/products/index"   
+            render "api/products/index"  
         else 
             @products = Product.joins(:category).where(categories: { name: params[:name]} )
             render "api/products/index"

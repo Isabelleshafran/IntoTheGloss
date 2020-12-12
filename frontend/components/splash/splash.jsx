@@ -6,16 +6,14 @@ import FeaturedImagesContainer from './featured_images_container';
 class Splash extends React.Component {
     constructor(props) {
         super(props);
-        
+
     }
 
-    // splashClick(){
 
-    // }
 
 
     render() { 
-        console.log(this.props)
+
         return ( 
             <div>
                 <div className="hero">
@@ -26,7 +24,7 @@ class Splash extends React.Component {
                     <div className="hero-copy">
                         <img className="g-png" src={window.glossier_g} />
                         <h3 className="boy-brow-copy">Boy Brow is back.</h3>
-                        <button><Link to={"/makeup/54"} className="boy-brow-shop-now">Shop now</Link></button>
+                        <button><Link to={`/shopall/`} className="boy-brow-shop-now">Shop now</Link></button>
                     </div>
                 </div>
 
@@ -45,3 +43,5 @@ class Splash extends React.Component {
 }
  
 export default Splash;
+
+// ${ this.props.products[3] }

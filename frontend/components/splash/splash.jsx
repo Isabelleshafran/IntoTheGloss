@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import ProductIndexContainer from '../products/product_index_container';
+import FeaturedImagesContainer from './featured_images_container';
 
 class Splash extends React.Component {
     constructor(props) {
@@ -7,7 +9,13 @@ class Splash extends React.Component {
         
     }
 
+    // splashClick(){
+
+    // }
+
+
     render() { 
+        console.log(this.props)
         return ( 
             <div>
                 <div className="hero">
@@ -20,8 +28,10 @@ class Splash extends React.Component {
                         <h3 className="boy-brow-copy">Boy Brow is back.</h3>
                         <button><Link to={"/makeup/54"} className="boy-brow-shop-now">Shop now</Link></button>
                     </div>
-                   
                 </div>
+
+                <FeaturedImagesContainer />
+
                 <div className="pink-masthead">
                     <h1>Beauty inspired by real life.</h1>
                     <br/>

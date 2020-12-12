@@ -36,7 +36,7 @@ class ProductIndex extends React.Component {
 
 
     render() { 
-        console.log(this.props)
+        // console.log(this.props)
         const { products } = this.props;
         return ( 
             <div>

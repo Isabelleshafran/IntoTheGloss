@@ -17,7 +17,7 @@ class ProductShow extends React.Component {
         if(!this.props.product){
             return null
         } else {
-            console.log(this.props)
+            // console.log(this.props)
             return ( 
                 <div className="product-show">
                     {this.props.product.title}

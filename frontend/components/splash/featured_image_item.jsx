@@ -17,7 +17,7 @@ class FeaturedImageItem extends React.Component {
                 <div className="product-index-info">
 
                     <div className="product-index-title">
-                        <Link to={`/${this.props.category}/${product.id}`}>{product.title}</Link>
+                        <Link to={`/shopall/${product.id}`}>{product.title}</Link>
                         <div className="product-index-description">
                             {product.description}
                         </div>

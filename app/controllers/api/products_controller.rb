@@ -6,7 +6,7 @@ class Api::ProductsController < ApplicationController
             render "api/products/index"
         elsif params[:name] === "/"
             # Product.where("product.title LIKE '%'")
-            @products = Product.where(:title => ["Futuredew", "Boy Brow", "Cloud Paint", "Hand Cream", "Generation G"])
+            @products = Product.where(:title => ["Futuredew", "Boy Brow", "Cloud Paint", "Hand Cream", "Generation G", "Milk Jelly Cleanser", "Solution"])
             # @products = Product.all
             render "api/products/index"   
         else 

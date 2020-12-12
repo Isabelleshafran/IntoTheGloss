@@ -62,14 +62,18 @@
 
 .splash-products {
     display: flex;
-    // padding: 2%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
-    justify-content: center;
-    // border: 1px solid black;
-    // width: 66%;
-    justify-content: center;
+    margin-left: 10%;
+    align-items: center;
+    overflow-x: auto;
+    height: 500px;
+    width: 80%;
 }
+
+// ::-webkit-scrollbar {
+//     width: 100px;
+// }
 
 .feature-text {
     margin: 1%;

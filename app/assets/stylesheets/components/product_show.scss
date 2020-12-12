@@ -1,3 +1,71 @@
 .product-show {
-    margin-top: 15%;
+    margin-top: 150px;
+    // border: 1px solid black;
+    margin-left: 13%;
+    margin-right: 13%;
+    display: flex;
+    height: 600px;
+    font-family: "Apercu Pro", -apple-system, BlinkMacSystemFont, Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+.product-show-text {
+    // border: 1px solid blue;
+    width: 60%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .product-show-details {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 4%;
+    }
+
+}
+
+.product-show-image {
+
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+
+.product-show-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 1%;
+}
+
+.product-show-description {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+    margin-bottom: 5%;
+}
+
+.product-show-price {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 3%;
+    margin-top: 1%;
+    margin-left: 4%;
+    // margin-bottom: 6%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.product-show-price:hover {
+    background-color: rgb(118, 118, 118);
 }

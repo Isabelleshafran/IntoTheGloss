@@ -18,10 +18,11 @@ class ProductIndexItem extends React.Component {
                 <div className="product-index-info">
                     
                     <div className="product-index-title">
-                      <Link to={`/${this.props.category}/${product.id}`}>{product.title}</Link>
+                      <Link to={`/${this.props.category}/${product.id}`}>{product.title}
                         <div className="product-index-description">
                             {product.description}
                         </div>
+                        </Link>
                     </div>
 
                     <button className="product-index-price">

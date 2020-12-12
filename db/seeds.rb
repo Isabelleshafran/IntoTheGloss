@@ -37,8 +37,7 @@ c3 = Category.create!(
 p1 = Product.create!(
     title: "The Skincare Edit",
     description: "mini skincare essentials", 
-    details: "A full Glossier skincare routine, in irresistible miniature sizes.
-    What it is: Back by popular demand! Our skincare bestsellers in miniature sizes, plus a soft, stretchy pink logo headband—to give or to keep.", 
+    details: "A full Glossier skincare routine, in irresistible miniature sizes. Back by popular demand! Our skincare bestsellers in miniature sizes, plus a soft, stretchy pink logo headband—to give or to keep.", 
     price: 50, 
     category_id: c1.id 
 )
@@ -53,21 +52,20 @@ p1 = Product.create!(
 p2 = Product.create!(
     title: "The 3-Step Skincare Routine",
     description: "cleanser + moisturizer + lip balm", 
-    details: "The non-negotiables.
-    What it is: If you only use three products a day, these are the ones: our iconic face wash + versatile, buildable moisturizer + bestselling lip balm.", 
+    details: "The non-negotiables. If you only use three products a day, these are the ones: our iconic face wash + versatile, buildable moisturizer + bestselling lip balm.", 
     price: 40, 
     category_id: c1.id
 )
 
-file2 = open('https://intothegloss-seeds.s3-us-west-1.amazonaws.com/skincare_set_edit.jpg')
-p2.image.attach(io: file2, filename: 'skincare_set.png', content_type: 'jpg')
+# file2 = open('https://intothegloss-seeds.s3-us-west-1.amazonaws.com/skincare_set_edit.jpg')
+# p2.image.attach(io: file2, filename: 'skincare_set.png', content_type: 'jpg')
 
 
 
 p3 = Product.create!(
     title: "Milk Jelly Cleanser",
     description: "conditioning face wash", 
-    details: "Everything a cleanser should be. What it is: A gentle-yet-effective creamy gel face wash for all skin types", 
+    details: "Everything a cleanser should be. A gentle-yet-effective creamy gel face wash for all skin types", 
     price: 9, 
     category_id: c1.id
 )
@@ -75,8 +73,7 @@ p3 = Product.create!(
 p4 = Product.create!(
     title: "Futuredew",
     description: "oil serum hybrid", 
-    details: "An instant dewy glow that lasts.
-    What it is: A shortcut to the way your skin looks after a full skincare routine—dewy, glowing, cared-for—in one long-wearing product", 
+    details: "An instant dewy glow that lasts. A shortcut to the way your skin looks after a full skincare routine—dewy, glowing, cared-for—in one long-wearing product", 
     price: 24, 
     category_id: c1.id
 )
@@ -84,73 +81,155 @@ p4 = Product.create!(
 p5 = Product.create!(
     title: "Solution",
     description: "exfoliating skin perfector", 
-    details: "Transforms the look of skin in four weeks.
-    What it is: A gentle way to slough away dead skin to reveal a fresh, smooth complexion", 
+    details: "Transforms the look of skin in four weeks. A gentle way to slough away dead skin to reveal a fresh, smooth complexion", 
     price: 24, 
     category_id: c1.id
 )
 
 p6 = Product.create!(
+    title: "Priming Moisterizer Rich",
+    description: "luxurious face cream", 
+    details: "An ultrarich, buttery moisturizer. A rich, deeply moisturizing yet fast-absorbing face cream for day or night",
+    price: 35, 
+    category_id: c1.id
+)
+
+p7 = Product.create!(
+    title: "Super Bounce",
+    description: "hyaluronic acid + vitamin b5 serum", 
+    details: "A refreshing Hyaluronic Acid serum for an instantly soft, smooth (never sticky!) canvas. A soothing combination of 2% Hyaluronic Acid Complex and Pro-Vitamin B5 that hydrates the skin on multiple levels.",
+    price: 28, 
+    category_id: c1.id
+)
+
+p8 = Product.create!(
+    title: "Super Glow",
+    description: "vitamin c + magnesium serum", 
+    details: "A nourishing Vitamin C serum for visibly smoother, more even-toned skin, over time. A potent, stable formulation of 5% Vitamin C derivative MAP + Magnesium PCA that delivers key ingredients without irritating sensitive skin.",
+    price: 28, 
+    category_id: c1.id
+)
+
+p9 = Product.create!(
+    title: "Priming Moisturizer",
+    description: "buildable hydrating creme", 
+    details: "Light and buildable moisture for a dewy, smooth canvas. A moisturizer that instantly brings out the best in your skin, making it fresh and glowing.",
+    price: 22, 
+    category_id: c1.id
+)
+
+p10 = Product.create!(
+    title: "Moisturizing Moon Mask",
+    description: "soothing face treament", 
+    details: "The most intensely hydrating mask we could make. A creamy, dreamy, works-on-all-skin-types mask for deep hydration.",
+    price: 22, 
+    category_id: c1.id
+)
+
+p11 = Product.create!(
     title: "Boy Brow",
     description: "grooming pomade", 
-    details: "Fluffy, instantly groomed brows.
-    What it is: A brushable, creamy wax that visibly thickens, shapes, and grooms brows into place", 
+    details: "Fluffy, instantly groomed brows. A brushable, creamy wax that visibly thickens, shapes, and grooms brows into place", 
     price: 16, 
     category_id: c2.id
 )
 
-p7 = Product.create!(
+p12 = Product.create!(
     title: "Cloud Paint",
     description: "seamless cheek color", 
-    details: "The most user-friendly blush under the sun.
-    What it is: A seamless, buildable gel-cream blush that’s enjoyable to apply and easy to wear.", 
+    details: "The most user-friendly blush under the sun. A seamless, buildable gel-cream blush that’s enjoyable to apply and easy to wear.", 
     price: 18, 
     category_id: c2.id 
 )
 
-p8 = Product.create!(
+p13 = Product.create!(
     title: "Generation G",
     description: "sheer matte lipstick", 
-    details: "A new generation of lipstick.
-    What it is: A lip color that gives the look and finish of just-blotted lipstick, without the blot", 
+    details: "A new generation of lipstick. A lip color that gives the look and finish of just-blotted lipstick, without the blot", 
     price: 18, 
     category_id: c2.id 
 )
 
-p9 = Product.create!(
+p14 = Product.create!(
     title: "Lip Gloss",
     description: "cushiony glassy shine", 
-    details: "High shine without the stickiness.
-    What it is: A comfortable, long-wearing lip gloss with a glassy finish", 
+    details: "High shine without the stickiness. A comfortable, long-wearing lip gloss with a glassy finish", 
     price: 14, 
     category_id: c2.id 
 )
 
+p15 = Product.create!(
+    title: "Lash Slick",
+    description: "film form mascara", 
+    details: "Extensions without the extensions. The perfect everyday black mascara", 
+    price: 16, 
+    category_id: c2.id 
+)
 
-p10 = Product.create!(
+p16 = Product.create!(
+    title: "Lidstar",
+    description: "glistening eye glow", 
+    details: "Less shadow, more glow. Soft, glistening eye color that lasts all day", 
+    price: 18, 
+    category_id: c2.id 
+)
+
+p17 = Product.create!(
+    title: "Pro Tip",
+    description: "brush point liquid eyeliner", 
+    details: "Get a smooth, precise line every time. An easy-to-use black liquid eyeliner with a brush tip for precise definition, in a smudge-resistant formula", 
+    price: 16, 
+    category_id: c2.id 
+)
+
+p23 = Product.create!(
+    title: "Haloscope",
+    description: "dew effect highlighter", 
+    details: "Find your light. A crystal-infused highlighter with skin conditioning benefits", 
+    price: 22, 
+    category_id: c2.id 
+)
+
+
+
+
+p18 = Product.create!(
     title: "Body Hero Exfoliating Bar",
     description: "exfoliating bar", 
-    details: "You’re going to be so smooth.
-    What it is: Our ergonomically designed, no-mess body scrub fits in the palm of your hand and sloughs away dead skin and dryness—revealing soft, baby-smooth skin.", 
+    details: "You’re going to be so smooth. Our ergonomically designed, no-mess body scrub fits in the palm of your hand and sloughs away dead skin and dryness—revealing soft, baby-smooth skin.", 
     price: 14, 
     category_id: c3.id
 )
 
-p11 = Product.create!(
+p19 = Product.create!(
     title: "Hand Cream",
     description: "creme pour les mains", 
-    details: "Always have hydration on hand.    
-    What it is: Supercharged moisture in a palm-sized pod with sleek curves and 360º squeeze.", 
+    details: "Always have hydration on hand. Supercharged moisture in a palm-sized pod with sleek curves and 360º squeeze.", 
     price: 18, 
     category_id: c3.id
 )
 
-p12 = Product.create!(
+p20 = Product.create!(
     title: "Body Hero Daily Perfecting Cream",
     description: "daily perfecting cream", 
-    details: "A skincare-grade body lotion.
-    What it is: A body cream inspired by face products—that does more than just moisturize", 
+    details: "A skincare-grade body lotion. A body cream inspired by face products—that does more than just moisturize", 
     price: 22, 
+    category_id: c3.id
+)
+
+p21 = Product.create!(
+    title: "The Nighstand Duo",
+    description: "holiday exclusive", 
+    details: "Within reach at all times. Because it’s nice to know you’ve got lip balm and hand cream nearby whenever you need them—a limited-edition duo to give (or to keep).", 
+    price: 22, 
+    category_id: c3.id
+)
+
+p22 = Product.create!(
+    title: "Body Hero Daily Oil Wash",
+    description: "daily oil wash", 
+    details: "Body wash goes luxe. An oil cleanser inspired by the ones for your face, made for your body", 
+    price: 18, 
     category_id: c3.id
 )
 

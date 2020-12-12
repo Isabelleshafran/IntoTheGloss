@@ -4,7 +4,7 @@
     margin-left: 13%;
     margin-right: 13%;
     display: flex;
-    height: 600px;
+    height: 550px;
     font-family: "Apercu Pro", -apple-system, BlinkMacSystemFont, Helvetica, "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -16,6 +16,8 @@
     flex-direction: column;
     justify-content: space-between;
 
+}
+
     .product-show-details {
         font-weight: 400;
         font-size: 16px;
@@ -23,7 +25,19 @@
         margin-bottom: 4%;
     }
 
-}
+    .product-show-whyspecial{
+        line-height: 1.5;
+        font-weight: 400;
+    }
+    
+
+.why {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1.1px;
+
+ }
 
 .product-show-image {
 

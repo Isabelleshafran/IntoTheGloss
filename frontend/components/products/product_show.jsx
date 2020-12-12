@@ -1,7 +1,6 @@
 import React from 'react';
 
 
-
 class ProductShow extends React.Component {
     constructor(props) {
         super(props);
@@ -31,6 +30,13 @@ class ProductShow extends React.Component {
                             <div className="product-show-title">{this.props.product.title}</div>
                             <div className="product-show-description">{this.props.product.description}</div>
                             <div className="product-show-details">{this.props.product.details}</div>
+                            <br/>
+                            <br/>
+                            <div>
+                                <div className="why"> WHY IT'S SPECIAL: </div>
+                                <br/>
+                                <li className="product-show-whyspecial">{this.props.product.whyspecial}</li>
+                            </div>
                         </div>
                         <div>
                             <button className="product-show-price">

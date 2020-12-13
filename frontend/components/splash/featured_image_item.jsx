@@ -11,8 +11,8 @@ class FeaturedImageItem extends React.Component {
         return ( 
             <div className="splash-image-index">
 
-                <div className="product-index-image">
-                    <img src={window.generic_product} />
+                <div className="splash-index-image">
+                    <img src={this.props.product.imgUrl} />
                 </div>
                 <div className="product-index-info">
 

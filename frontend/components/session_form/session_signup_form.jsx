@@ -42,6 +42,10 @@ class SessionSignupForm extends React.Component {
         }
     }
 
+    // otherForm(){
+
+    // }
+
     renderErrors() {
         const { errors } = this.props
         return (
@@ -105,7 +109,7 @@ class SessionSignupForm extends React.Component {
                 <br/>
                 <br/>
                 <div className="sign-in-text">Sign In to glossier.com</div>
-                <div className="sign-in-button">{this.props.otherForm}</div>
+                <button className="sign-in-button" onClick={() => dispatch(this.props.openModal('signin'))}>Sign In to glossier.com</button>
                 <br/>
                 <br/>
                 <button className="demo-button" onClick={this.demoUser}>Demo User Sign In</button>

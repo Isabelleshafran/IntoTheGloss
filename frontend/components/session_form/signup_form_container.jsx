@@ -17,11 +17,6 @@ const msp = ({ errors, entities: { users }, session }) => {
 const mdp = dispatch => {
     return {
         processForm: (user) => dispatch(signup(user)),
-        otherForm: (
-            <button onClick={() => dispatch(openModal('signin'))}>
-                Sign In to Glossier.com
-            </button>
-        ),
         closeModal: () => dispatch(closeModal()), 
         openModal: modal => dispatch(openModal(modal)), 
         login: (user) => dispatch(login(user)), 

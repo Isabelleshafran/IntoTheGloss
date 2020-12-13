@@ -13,11 +13,6 @@ const msp = ({errors, entities: { users }, session }) => ({
 
 const mdp = dispatch => ({
     processForm: (user) => dispatch(login(user)), 
-    otherForm: (
-        <button onClick={() => dispatch(openModal('signup'))}>
-            Create an Account 
-        </button>
-    ),
     closeModal: () => dispatch(closeModal()), 
     openModal: modal => dispatch(openModal(modal)), 
     login: (user) => dispatch(login(user)), 

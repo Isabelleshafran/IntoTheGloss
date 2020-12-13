@@ -20,9 +20,7 @@ class ProductShow extends React.Component {
                 <div className="product-show">
 
                     <div className="product-show-image">
-                        <img src={window.generic_product} />
-                        {/* <img src={this.props.product.imgUrl} alt=""/> */}
-                        {/* {this.props.produc} */}
+                        <img src={this.props.product.imgUrl}/>
                     </div>
 
                     <div className="product-show-text">

@@ -89,7 +89,7 @@ class SessionSigninForm extends React.Component {
                     <br/>
                 </form>
                 <p>Get free Glossier credit for referring friends and save payment information for easier purchasing</p>
-                <div className="create-account-button">{this.props.otherForm}</div>
+                <button className="create-account-button" onClick={() => dispatch(this.props.openModal('signup'))}>Create an Account</button>
                 <br/>
                 <br/>
                 <button className="demo-button" onClick={this.demoUser}>Demo User Sign In</button>

@@ -13,7 +13,7 @@ class ProductIndexItem extends React.Component {
             <div className="product-index">
 
                 <div className="product-index-image">
-                    <img src={window.generic_product} />
+                    <img src={this.props.product.imgUrl}/>
                 </div>
                 <div className="product-index-info">
                     

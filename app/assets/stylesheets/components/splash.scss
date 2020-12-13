@@ -33,7 +33,7 @@
 .hero {
     display: flex;
     font-family: "Apercu Pro", -apple-system, BlinkMacSystemFont, Helvetica, "Helvetica Neue", Arial, sans-serif;
-    padding-top: 50px;
+    // padding-top: px;
 }
 
 .boy-brow-copy {
@@ -85,7 +85,10 @@
     background-color: rgb(216, 215, 215);
 }
 
-
+.splash-index-image {
+    height: 372px;
+    width: 270px;
+}
 .feature-text {
     margin: 1%;
     display: flex;

@@ -17,8 +17,7 @@
 }
 
 .product-index-image {
-    height: 372px;
-    width: 270px;
+     max-width: 100%;   
 }
 
 .product-index-title {
@@ -35,15 +34,17 @@
 
 .product-index {
     background-color: rgb(247, 247, 247);
-    margin: 1%;
+    margin: 3.5%;
 }
 
 .products {
-    display: flex;
-    padding: 2%;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin-left: 8%;
+    margin-right: 8%;
+
     font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
-    justify-content: center;
 }
 
 .product-index-info {
@@ -51,6 +52,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 5px;
 }
 
 

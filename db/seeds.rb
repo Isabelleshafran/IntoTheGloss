@@ -300,3 +300,137 @@ p22 = Product.create!(
     category_id: c3.id
 )
 
+
+s1 = Shade.create!(
+    name: "Black", 
+    product_id: p11.id, 
+    img_url: ""
+)
+
+s2 = Shade.create!(
+    name: "Brown", 
+    product_id: p11.id, 
+    img_url: ""
+)
+
+s3 = Shade.create!(
+    name: "Auburn", 
+    product_id: p11.id, 
+    img_url: ""
+)
+
+s4 = Shade.create!(
+    name: "Blond", 
+    product_id: p11.id, 
+    img_url: ""
+)
+
+s5 = Shade.create!(
+    name: "Clear", 
+    product_id: p11.id, 
+    img_url: ""
+)
+
+s6 = Shade.create!(
+    name: "Storm", 
+    product_id: p12.id, 
+    img_url: ""
+)
+
+s7 = Shade.create!(
+    name: "Dawn", 
+    product_id: p12.id, 
+    img_url: ""
+)
+
+s8 = Shade.create!(
+    name: "Puff", 
+    product_id: p12.id, 
+    img_url: ""
+)
+
+s9 = Shade.create!(
+    name: "Haze", 
+    product_id: p12.id, 
+    img_url: ""
+)
+
+
+s10 = Shade.create!(
+    name: "Cake", 
+    product_id: p13.id, 
+    img_url: ""
+)
+
+s11 = Shade.create!(
+    name: "Crush", 
+    product_id: p13.id, 
+    img_url: ""
+)
+
+s12 = Shade.create!(
+    name: "Zip", 
+    product_id: p13.id, 
+    img_url: ""
+)
+
+s13 = Shade.create!(
+    name: "Jam", 
+    product_id: p13.id, 
+    img_url: ""
+)
+
+s14 = Shade.create!(
+    name: "Holographic", 
+    product_id: p14.id, 
+    img_url: "holographic.jpg"
+)
+
+s15 = Shade.create!(
+    name: "Red", 
+    product_id: p14.id, 
+    img_url: "red.jpg"
+)
+s16 = Shade.create!(
+    name: "Gold", 
+    product_id: p14.id, 
+    img_url: "gold.jpg"
+)
+
+s17 = Shade.create!(
+    name: "Fawn", 
+    product_id: p16.id, 
+    img_url: ""
+)
+
+s18 = Shade.create!(
+    name: "Cub", 
+    product_id: p16.id, 
+    img_url: ""
+)
+
+s19 = Shade.create!(
+    name: "Moon", 
+    product_id: p16.id, 
+    img_url: ""
+)
+
+s20 = Shade.create!(
+    name: "Topaz", 
+    product_id: p23.id, 
+    img_url: ""
+)
+
+
+s21 = Shade.create!(
+    name: "Quartz", 
+    product_id: p23.id, 
+    img_url: ""
+)
+
+
+s22 = Shade.create!(
+    name: "Moonstone", 
+    product_id: p23.id, 
+    img_url: ""
+)

@@ -20,5 +20,6 @@ export const fetchProducts = (name) => dispatch => (
 
 export const fetchProduct = (productId) => dispatch => (
     APIUtil.fetchProduct(productId)
-        .then(product => dispatch(receiveProduct(product)))
+        .then(product => {
+            dispatch(receiveProduct(product))})
 )

@@ -1,4 +1,5 @@
 import React from 'react';
+import ShadeShow from '../shades/shade_index'
 
 
 class ProductShow extends React.Component {
@@ -36,6 +37,7 @@ class ProductShow extends React.Component {
                             </div>
                         </div>
                         <div>
+                            <div className="shades">{this.props.product.shades.map(shade => <ShadeShow shade={shade} key={shade.name}/>)}</div>
                             <button className="product-show-price">
                                 <div>Add to Bag - ${this.props.product.price}</div>
                             </button>

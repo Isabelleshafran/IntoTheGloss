@@ -22,7 +22,6 @@ class ProductShow extends React.Component {
                     <div className="product-show-image">
                         <img src={this.props.product.imgUrl}/>
                     </div>
-
                     <div className="product-show-text">
                         <div>
                             <div className="product-show-title">{this.props.product.title}</div>

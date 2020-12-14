@@ -21,7 +21,9 @@ class Splash extends React.Component {
                         </div>
                         <div className="hero-copy">
                             <img className="g-png" src={window.glossier_g} />
-                            <h3 className="boy-brow-copy">Boy Brow is back.</h3>
+                            {/* <h3 className="boy-brow-copy">Boy Brow is back.</h3> */}
+                            <h3 className="boy-brow-copy">Extremely giftable gifts.</h3>
+
                             <Link to={`/makeup/`}><button className="boy-brow-shop-now">Shop Now</button></Link>
                         </div>
                     </div>

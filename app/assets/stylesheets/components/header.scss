@@ -19,6 +19,18 @@
 
 }
 
+// .searchicon {
+//     height: 20px;
+//     width: 20px;
+//     margin-left: 75px;
+//     cursor: pointer;
+
+// }
+
+// .searchicon:hover {
+//     color: rgb(85, 85, 255);
+// }
+
 .top-header {
     font-weight: 400;
     font-size: 100%;
@@ -61,7 +73,7 @@ i.fas.fa-search {
   
 }
 
-i.far.fa-user:hover, i.fas.fa-search:hover, .close-x:hover {
+i.far.fa-user:hover, .close-x:hover, .fas.fa-search:hover {
     color: rgb(85, 85, 255)
 }
 

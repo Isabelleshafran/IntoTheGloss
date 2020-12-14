@@ -18,10 +18,8 @@ class SessionSignupForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.processForm(this.state)
-        if (this.props.currentUser) {
-            this.props.openModal('account')
-        }
+        this.props.processForm(this.state).then(this.props.openModal('account'));
+  
     }
 
     handleChange(field) {
@@ -30,21 +28,13 @@ class SessionSignupForm extends React.Component {
 
     demoUser(e) {
         e.preventDefault()
-        this.setState({
-            email: "guest@glossier.io",
-            password: "password",
-            first_name: "guest",
-            last_name: "user"
-        }, () => this.props.login(this.state));
-
-        if (this.props.currentUser) {
-            this.props.openModal('account')
-        }
+        this.props
+            .login({
+                ["email"]: "guest@glossier.io",
+                ["password"]: "password",
+            })
+            .then(this.props.openModal('account'));
     }
-
-    // otherForm(){
-
-    // }
 
     renderErrors() {
         const { errors } = this.props

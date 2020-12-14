@@ -43,4 +43,3 @@ class Splash extends React.Component {
  
 export default Splash;
 
-// ${ this.props.products[3] }

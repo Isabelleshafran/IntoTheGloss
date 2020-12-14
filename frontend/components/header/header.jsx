@@ -24,7 +24,8 @@ class Header extends React.Component {
             <div>
                 <nav className="main-header">
                     <div className="top-header">
-                        <i className="fas fa-search"></i>
+                        <div><i className="fas fa-search"></i></div>
+                        {/* <div><img className="searchicon" src={window.search}/></div> */}
                         <Link to="/"><div className="glossier">IntoTheGloss.</div></Link>
                         <div onClick={() => this.handleClick()}><i className="far fa-user"></i></div>
                     </div>

@@ -304,80 +304,80 @@ p22 = Product.create!(
 s1 = Shade.create!(
     name: "Black", 
     product_id: p11.id, 
-    img_url: ""
+    img_url: "black.jpg"
 )
 
 s2 = Shade.create!(
     name: "Brown", 
     product_id: p11.id, 
-    img_url: ""
+    img_url: "brown.jpg"
 )
 
 s3 = Shade.create!(
     name: "Auburn", 
     product_id: p11.id, 
-    img_url: ""
+    img_url: "auburn.jpg"
 )
 
 s4 = Shade.create!(
     name: "Blond", 
     product_id: p11.id, 
-    img_url: ""
+    img_url: "blond.jpg"
 )
 
 s5 = Shade.create!(
     name: "Clear", 
     product_id: p11.id, 
-    img_url: ""
+    img_url: "clear.jpg"
 )
 
 s6 = Shade.create!(
     name: "Storm", 
     product_id: p12.id, 
-    img_url: ""
+    img_url: "storm.jpg"
 )
 
 s7 = Shade.create!(
     name: "Dawn", 
     product_id: p12.id, 
-    img_url: ""
+    img_url: "dawn.jpg"
 )
 
 s8 = Shade.create!(
     name: "Puff", 
     product_id: p12.id, 
-    img_url: ""
+    img_url: "puff.jpg"
 )
 
 s9 = Shade.create!(
     name: "Haze", 
     product_id: p12.id, 
-    img_url: ""
+    img_url: "haze.jpg"
 )
 
 
 s10 = Shade.create!(
     name: "Cake", 
     product_id: p13.id, 
-    img_url: ""
+    img_url: "cake.jpg"
 )
 
 s11 = Shade.create!(
     name: "Crush", 
     product_id: p13.id, 
-    img_url: ""
+    img_url: "crush.jpg"
 )
 
 s12 = Shade.create!(
     name: "Zip", 
     product_id: p13.id, 
-    img_url: ""
+    img_url: "zip.jpg"
 )
 
 s13 = Shade.create!(
     name: "Jam", 
     product_id: p13.id, 
-    img_url: ""
+    img_url: "jam.jpg"
 )
 
 s14 = Shade.create!(
@@ -400,37 +400,37 @@ s16 = Shade.create!(
 s17 = Shade.create!(
     name: "Fawn", 
     product_id: p16.id, 
-    img_url: ""
+    img_url: "fawn.jpg"
 )
 
 s18 = Shade.create!(
     name: "Cub", 
     product_id: p16.id, 
-    img_url: ""
+    img_url: "cub.jpg"
 )
 
 s19 = Shade.create!(
     name: "Moon", 
     product_id: p16.id, 
-    img_url: ""
+    img_url: "moon.jpg"
 )
 
 s20 = Shade.create!(
     name: "Topaz", 
     product_id: p23.id, 
-    img_url: ""
+    img_url: "topaz.jpg"
 )
 
 
 s21 = Shade.create!(
     name: "Quartz", 
     product_id: p23.id, 
-    img_url: ""
+    img_url: "quartz.jpg"
 )
 
 
 s22 = Shade.create!(
     name: "Moonstone", 
     product_id: p23.id, 
-    img_url: ""
+    img_url: "moonstone.jpg"
 )

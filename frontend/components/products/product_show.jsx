@@ -13,10 +13,13 @@ class ProductShow extends React.Component {
     }
 
     render() { 
+        console.log(this.props)
 
+        
         if(!this.props.product){
             return null
         } else {
+            const color = Object.values(this.props.product.shades)
             return ( 
                 <div className="product-show">
 
@@ -36,8 +39,13 @@ class ProductShow extends React.Component {
                                 <li className="product-show-whyspecial">{this.props.product.whyspecial}</li>
                             </div>
                         </div>
+
                         <div>
-                            <div className="shades">{this.props.product.shades.map(shade => <ShadeShow shade={shade} key={shade.name}/>)}</div>
+
+                            <div className="shade-index" > 
+                                {color.map(shade => <ShadeShow shade={shade} key={shade.name} />)}
+                            </div>
+
                             <button className="product-show-price">
                                 <div>Add to Bag - ${this.props.product.price}</div>
                             </button>

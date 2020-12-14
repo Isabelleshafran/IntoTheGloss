@@ -1,4 +1,22 @@
-.shades {
-    display: flex;
-    border: 1px solid blue;
+.shades > img {
+    border-radius: 50%;
+    max-height: 100%;
+    max-width: 25%;
+    float: left;
 }
+
+.shade-index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    float: left;
+    max-height: 45%;
+    // max-width: 90%;
+    margin-left: 4%;
+    margin-bottom: 5%;
+}
+
+
+.shades > img:hover {
+    border: 2px solid rgb(85, 85, 85);
+}
+

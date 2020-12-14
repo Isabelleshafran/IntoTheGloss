@@ -4,7 +4,10 @@ import React from 'react';
 class SessionSigninForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = this.props.form;
+        this.state = {
+            email: "", 
+            password: ""
+        };
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.demoUser = this.demoUser.bind(this);
@@ -19,9 +22,10 @@ class SessionSigninForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.processForm(this.state).then(this.props.openModal('account'));
-
+        const user = Object.assign({}, this.state);
+        this.props.processForm(user).then(() => this.props.openModal('account'));
     }   
+
     
     handleChange(field){
         return e => this.setState({ [field]: e.currentTarget.value })

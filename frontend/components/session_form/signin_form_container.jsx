@@ -7,7 +7,6 @@ import { openModal, closeModal } from '../../actions/modal_actions';
 const msp = ({errors, entities: { users }, session }) => ({
     errors: errors.session, 
     formType: 'sign in', 
-    form: {email: "", password: ""}, 
     currentUser: users[session.id]
 })
 

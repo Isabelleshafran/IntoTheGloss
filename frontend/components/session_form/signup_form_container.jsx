@@ -9,7 +9,6 @@ const msp = ({ errors, entities: { users }, session }) => {
     return {
         errors: errors.session,
         formType: 'Create Account',
-        form: { email: "", password: "", first_name: "", last_name: ""}, 
         currentUser: users[session.id]
     };
 };

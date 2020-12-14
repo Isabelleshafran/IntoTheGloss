@@ -14,7 +14,12 @@ class NoUserCart extends React.Component {
                     <div onClick={this.props.closeModal} className="close-x">X</div>
                 </div>
 
-                <button className="create-account-button-cart" onClick={() => dispatch(this.props.openModal('signup'))}>Create an Account Here</button>
+            <div className='bottom-cart'> 
+
+                <img className="glogo" src={window.shopping_cart_g} />
+                <div className="create-account-button-cart" onClick={() => dispatch(this.props.openModal('signup'))}>Create an Account Here</div>
+
+            </div>
 
             </div>
 

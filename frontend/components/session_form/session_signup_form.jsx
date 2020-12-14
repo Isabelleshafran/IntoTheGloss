@@ -4,7 +4,12 @@ import React from 'react';
 class SessionSignupForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = this.props.form;
+        this.state = { 
+            email: "", 
+            password: "", 
+            first_name: "", 
+            last_name: ""
+        };
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.demoUser = this.demoUser.bind(this);
@@ -18,8 +23,8 @@ class SessionSignupForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.processForm(this.state).then(this.props.openModal('account'));
-  
+        const user = Object.assign({}, this.state);
+        this.props.processForm(user).then(() => this.props.openModal('account'));
     }
 
     handleChange(field) {
@@ -36,6 +41,7 @@ class SessionSignupForm extends React.Component {
             .then(this.props.openModal('account'));
     }
 
+
     renderErrors() {
         const { errors } = this.props
         return (
@@ -50,6 +56,8 @@ class SessionSignupForm extends React.Component {
     }
 
     render() {
+
+
         return (
             <div className="signup-form-container">
                 <form onSubmit={this.handleSubmit} className="signup-form-box">

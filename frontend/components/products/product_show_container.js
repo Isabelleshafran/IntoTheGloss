@@ -5,8 +5,7 @@ import ProductShow from './product_show';
 
 const msp = (state, ownProps) => {
     return {
-        product: state.entities.products[ownProps.match.params.productId],
-        // shades: Object.values(state.entities.products.shades)
+        product: state.entities.products[ownProps.match.params.productId]
     }
 }
 

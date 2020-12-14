@@ -10,13 +10,19 @@ class Header extends React.Component {
     }
 
     handleClick() {
-        
         if(!this.props.currentUser) {
             this.props.openModal('signup')
         } else {
             this.props.openModal('account')
         }
+    }
 
+    handleCart(){
+        if(!this.props.currentUser){
+            this.props.openModal('no_user_cart')
+        } else {
+            this.props.openModal('cart')
+        }
     }
 
     render() { 
@@ -25,9 +31,11 @@ class Header extends React.Component {
                 <nav className="main-header">
                     <div className="top-header">
                         <div><i className="fas fa-search"></i></div>
-                        {/* <div><img className="searchicon" src={window.search}/></div> */}
                         <Link to="/"><div className="glossier">IntoTheGloss.</div></Link>
-                        <div onClick={() => this.handleClick()}><i className="far fa-user"></i></div>
+                        <div className="right-nav">
+                            <div onClick={() => this.handleClick()}><i className="far fa-user"></i></div>
+                            <div onClick={() => this.handleCart()}><i className="fas fa-shopping-cart"></i></div>
+                        </div>
                     </div>
                     <div className="bottom-header">
                         <Link to="/shopall"><div className="shop-all">Shop All</div></Link>

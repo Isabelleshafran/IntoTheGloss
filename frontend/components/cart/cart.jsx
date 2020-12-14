@@ -1,14 +1,26 @@
 import React from 'react';
+import CartItem from './cart_item'
 
 class Cart extends React.Component {
     constructor(props) {
         super(props);
     
     }
+
+    StoragePull(){
+        const cartItems = JSON.parse(localStorage.getItem('cartObj'))
+        let arr = []
+        for (let id in cartItems) {
+            arr.push([id, cartItems[id].title, cartItems[id].quantity])
+        }
+
+        console.log(arr)
+        return arr;
+    }
     
     render() { 
-        console.log(this.props)
-        
+        // console.log(this.props)
+
         if(!this.props.currentUser) {
             return (
                 <div>
@@ -23,8 +35,19 @@ class Cart extends React.Component {
                 </div>
             )
         } else {
+    
             return (
-                <div>logged in!!</div>
+                <div>
+                    <div>Your Bag: </div>
+                    <br/>
+                    {this.StoragePull().map(product => {
+                        return (
+                            <div>
+                                <CartItem product={product} key={product[0]}/>
+                            </div>
+                        )
+                    })}
+                </div>
             )
         }
 

@@ -13,10 +13,24 @@ class ProductShow extends React.Component {
     }
 
     handleCart(){
+        const cart = JSON.parse(localStorage.getItem('cartObj')) || {}
+
+        const id = this.props.product.id
+        const title = this.props.product.title
+       
+
+        const quantity = 1
+        // write logic here to get quanity so const quantity = GetQuantity()
+
+        cart[id] = {title, quantity}
+
+        localStorage.setItem('cartObj', JSON.stringify(cart))
+  
         this.props.openModal('cart')
     }
 
     render() { 
+        // console.log(this.props)
         if(!this.props.product){
             return null
         } else {

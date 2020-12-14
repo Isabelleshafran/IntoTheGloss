@@ -11,14 +11,7 @@ class ProductIndexItem extends React.Component {
 
     handleCart() {
         this.props.openModal('cart')
-        // need items Id and quantity 
-        //  setting keys on local storage 
 
-        // cart js file will grab info from local storage 
-
-        // only one cart js and if logic in return for which modal to open 
-
-        // array of objects in local storage each ob has two keys (product id and quantity)
     }
 
     render() { 

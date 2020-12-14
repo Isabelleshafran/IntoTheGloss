@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { logout } from '../../actions/session_actions';
 import { openModal, closeModal } from '../../actions/modal_actions';
-import NoUserCart from './cart'
+import Cart from './cart'
 
 
 const msp = (state) => ({
@@ -14,4 +14,4 @@ const mdp = (dispatch) => ({
     openModal: (modal) => dispatch(openModal(modal))
 })
 
-export default connect(msp, mdp)(NoUserCart)
+export default connect(msp, mdp)(Cart)

@@ -8,7 +8,7 @@ class ShadeShow extends React.Component {
     
     render() { 
         return ( 
-            <button className="shades">
+            <button className="shades" title={this.props.shade.name}>
                 <img src={this.props.shade.imgUrl} alt={this.props.shade.name}/>
             </button>
          );

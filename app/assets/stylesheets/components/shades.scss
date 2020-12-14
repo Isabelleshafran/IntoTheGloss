@@ -3,13 +3,14 @@
     height: 3em;
     width: 3em;
     margin-left: 15px;
+    margin-bottom: 5px;
+
+
 }
 
-.shade-index {
 
-    margin-left: 4%;
+.shade-index {
     margin-bottom: 5%;
-    // border: 1px solid green;
     display: flex;
     max-width: 50%;
 }
@@ -17,5 +18,32 @@
 
 .shades > img:hover {
     border: 2px solid rgb(85, 85, 85);
+
 }
 
+
+.shades:after {
+  content: attr(title);
+  display: none;
+  position: absolute;
+  left: 49.5%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+
+}
+
+.shades:before {
+  content: "";
+  display: none;
+  position: absolute;
+  left: 49.5%;
+  transform: translateX(-50%);
+
+}
+
+.shades:hover:before,
+.shades:hover:after {
+  display: block;
+}

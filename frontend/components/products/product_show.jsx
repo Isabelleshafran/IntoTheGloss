@@ -12,10 +12,13 @@ class ProductShow extends React.Component {
         this.props.fetchProduct(this.props.match.params.productId)
     }
 
-    render() { 
-        console.log(this.props)
+    handleCart(){
+        if(!this.props.currentUser){
+            this.props.openModal('no_user_cart')
+        }
+    }
 
-        
+    render() { 
         if(!this.props.product){
             return null
         } else {
@@ -47,7 +50,7 @@ class ProductShow extends React.Component {
                             </div>
             
 
-                            <button className="product-show-price">
+                            <button className="product-show-price" onClick={() => this.handleCart()}>
                                 <div>Add to Bag - ${this.props.product.price}</div>
                             </button>
                         </div>

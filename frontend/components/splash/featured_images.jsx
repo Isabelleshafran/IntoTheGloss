@@ -26,7 +26,11 @@ class FeaturedImages extends React.Component {
                 <div className="splash-products">
                     {products.map(product => {
                         return (
-                            <FeaturedImageItem key={product.id} product={product} category={this.props.category}/>
+                            <FeaturedImageItem 
+                            key={product.id} 
+                            product={product} 
+                            category={this.props.category}
+                            openModal={this.props.openModal}/>
                         )
                     })}
                 </div>

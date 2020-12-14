@@ -8,9 +8,16 @@ class ProductIndexItem extends React.Component {
         super(props);
         
     }
+
+    handleCart() {
+        if (!this.props.currentUser) {
+            this.props.openModal('no_user_cart')
+        }
+    }
+
     render() { 
         const { product } = this.props
-
+        console.log(this.props)
         return (
             <div className="product-index">
 
@@ -27,7 +34,7 @@ class ProductIndexItem extends React.Component {
                         </Link>
                     </div>
 
-                    <button className="product-index-price">
+                    <button className="product-index-price" onClick={() => this.handleCart()}>
                         <div>Add to Bag</div>
                         <div>${product.price}</div>
                     </button>

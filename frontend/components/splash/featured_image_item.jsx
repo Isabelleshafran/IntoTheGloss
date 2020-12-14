@@ -6,6 +6,14 @@ class FeaturedImageItem extends React.Component {
     constructor(props) {
         super(props);
     }
+
+    handleCart() {
+        if (!this.props.currentUser) {
+            this.props.openModal('no_user_cart')
+        }
+    }
+
+
     render() { 
         const { product } = this.props
         return ( 
@@ -23,7 +31,7 @@ class FeaturedImageItem extends React.Component {
                         </div>
                     </div>
 
-                    <button className="product-index-price">
+                    <button className="product-index-price" onClick={() => this.handleCart()}>
                         <div>Add to Bag</div>
                         <div>${product.price}</div>
                     </button>

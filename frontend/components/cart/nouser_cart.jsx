@@ -10,7 +10,7 @@ class NoUserCart extends React.Component {
         return ( 
             <div>
                 <div className="no-user-cart">
-                    <div className="no-user-header">Please sign in to view your cart</div>
+                    <div className="no-user-header">Please sign in to view or add to your cart</div>
                     <div onClick={this.props.closeModal} className="close-x">X</div>
                 </div>
 

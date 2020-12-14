@@ -8,8 +8,6 @@ class ProductIndex extends React.Component {
         super(props);
     }
 
-
-
     componentDidMount(){
         this.props.fetchProducts(this.props.category)  
         
@@ -44,7 +42,7 @@ class ProductIndex extends React.Component {
                 <div className="products">
                     {products.map(product => {
                         return (
-                         <ProductIndexItem key={product.id} product={product} category={this.props.category}/>   
+                         <ProductIndexItem key={product.id} product={product} category={this.props.category} openModal={this.props.openModal}/>   
                         )
                     })}
                 </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-class NoUserCart extends React.Component {
+class Cart extends React.Component {
     constructor(props) {
         super(props);
     
@@ -8,6 +8,8 @@ class NoUserCart extends React.Component {
     
     render() { 
         return ( 
+
+
             <div>
                 <div className="no-user-cart">
                     <div className="no-user-header">Please sign in to view or add to your cart</div>
@@ -28,4 +30,4 @@ class NoUserCart extends React.Component {
     }
 }
  
-export default NoUserCart;
+export default Cart;

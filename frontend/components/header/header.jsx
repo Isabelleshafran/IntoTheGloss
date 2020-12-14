@@ -18,11 +18,7 @@ class Header extends React.Component {
     }
 
     handleCart(){
-        if(!this.props.currentUser){
-            this.props.openModal('no_user_cart')
-        } else {
-            this.props.openModal('cart')
-        }
+        this.props.openModal('cart')
     }
 
     render() { 

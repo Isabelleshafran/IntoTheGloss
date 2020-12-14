@@ -8,9 +8,7 @@ class FeaturedImageItem extends React.Component {
     }
 
     handleCart() {
-        if (!this.props.currentUser) {
-            this.props.openModal('no_user_cart')
-        }
+        this.props.openModal('cart')
     }
 
 

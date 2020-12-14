@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { logout } from '../../actions/session_actions';
 import { openModal, closeModal } from '../../actions/modal_actions';
-import NoUserCart from './nouser_cart'
+import NoUserCart from './cart'
 
 
 const msp = (state) => ({

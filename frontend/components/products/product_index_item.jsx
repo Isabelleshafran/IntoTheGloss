@@ -1,6 +1,7 @@
 import { withRouter } from 'react-router-dom'
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ShadeShow from '../shades/shade_index';
 
 class ProductIndexItem extends React.Component {
     constructor(props) {
@@ -9,6 +10,7 @@ class ProductIndexItem extends React.Component {
     }
     render() { 
         const { product } = this.props
+
         return (
             <div className="product-index">
 

@@ -41,10 +41,11 @@ class ProductShow extends React.Component {
                         </div>
 
                         <div>
-
+                        
                             <div className="shade-index" > 
                                 {color.map(shade => <ShadeShow shade={shade} key={shade.name} />)}
                             </div>
+            
 
                             <button className="product-show-price">
                                 <div>Add to Bag - ${this.props.product.price}</div>

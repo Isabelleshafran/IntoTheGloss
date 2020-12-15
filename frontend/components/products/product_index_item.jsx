@@ -10,6 +10,24 @@ class ProductIndexItem extends React.Component {
     }
 
     handleCart() {
+        const cart = JSON.parse(localStorage.getItem('cartObj')) || {}
+
+        const id = this.props.product.id
+        const title = this.props.product.title
+        const price = this.props.product.price
+
+        let quantity;
+
+        if (!cart[id]) {
+            quantity = 1
+        } else {
+            quantity = cart[id].quantity + 1
+        }
+
+        cart[id] = { id, title, quantity, price }
+
+        localStorage.setItem('cartObj', JSON.stringify(cart))
+
         this.props.openModal('cart')
 
     }

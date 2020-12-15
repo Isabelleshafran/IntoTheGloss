@@ -115,9 +115,6 @@
 }
 
 .create-account-button-cart {
-    margin-left: 24px;
-    display: flex; 
-    justify-content: center;
     cursor: pointer;
 }
 
@@ -128,12 +125,16 @@
     .glogo {
         height: 100px;
         width: 100px;
-        margin-left: 40%;
+  
     }
 
     .bottom-cart {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        margin-top: 25%;
+        align-items: center;
+        margin-left: 25%;
+        width: 50%;
         height: 250px;
+
     }

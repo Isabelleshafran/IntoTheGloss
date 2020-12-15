@@ -22,9 +22,14 @@ class Cart extends React.Component {
     }
 
     handleCheckOut(){
-        // localStorage.clear()
-        // localStorage.removeItem("cartObj")
-        // this.props.openModal('signin')
+        const items = JSON.parse(localStorage.getItem('cartObj'))
+
+        for(let key in items){
+            delete items[key]
+            localStorage.setItem('cartObj', JSON.stringify(items))
+        }
+
+        this.props.openModal('account')
     }
     
     render() { 
@@ -32,8 +37,8 @@ class Cart extends React.Component {
             return (
                 <div>
                     <div className="no-user-cart">
+                        <div onClick={this.props.closeModal} className="x">X</div>
                         <div className="no-user-header">Please sign in to view or add to your cart</div>
-                        <div onClick={this.props.closeModal} className="close-x">X</div>
                     </div>
                     <div className='bottom-cart'>
                         <img className="glogo" src={window.shopping_cart_g} />
@@ -72,7 +77,7 @@ class Cart extends React.Component {
 
                     </div>
 
-                    <button className="check-out">Check Out</button>
+                    <button className="check-out" onClick={() => this.handleCheckOut()}>Check Out</button>
                 </div>
             )
         }

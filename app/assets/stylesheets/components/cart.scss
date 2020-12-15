@@ -8,7 +8,7 @@
     color: rgb(85, 85, 255)
  }
 
- .your-bag-header {
+ .your-bag-header, .no-user-cart {
     border-bottom: 1px solid lightgray;
     height: 20px;
     display: flex;
@@ -107,7 +107,7 @@
 }
 
 .no-user-header {
-    margin-left: 10%;
+    margin-left: 7%;
 }
 
 .cart {

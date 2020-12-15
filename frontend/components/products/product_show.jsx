@@ -19,6 +19,8 @@ class ProductShow extends React.Component {
         const title = this.props.product.title
         const price = this.props.product.price
         const img = this.props.product.imgUrl
+
+        console.log(this.props.product)
         
         let quantity;
 

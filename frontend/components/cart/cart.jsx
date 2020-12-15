@@ -20,6 +20,12 @@ class Cart extends React.Component {
         }
         return total
     }
+
+    handleCheckOut(){
+        // localStorage.clear()
+        // localStorage.removeItem("cartObj")
+        // this.props.openModal('signin')
+    }
     
     render() { 
         if(!this.props.currentUser) {
@@ -45,7 +51,7 @@ class Cart extends React.Component {
                         return (
                             <div>
                                 <CartItem product={product} 
-                                key={product.id}
+                                key={product.title}
                                 openModal={this.props.openModal}
                                 closeModal={this.props.closeModal}/>
                             </div>
@@ -53,7 +59,7 @@ class Cart extends React.Component {
                     })}
 
                     <div>Estimated Total: {this.CartTotal()}</div>
-
+                    {/* <button onClick={() => this.handleCheckOut()}>Check Out</button> */}
                 </div>
             )
         }

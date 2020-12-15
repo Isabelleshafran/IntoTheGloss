@@ -12,25 +12,25 @@
 .left-hero {
     max-width: 50%;
     margin-left: 6%;
-    max-height: 86%;
+    max-height: 93%;
 }
 
 .right-hero {
     margin-left: 2%;
-    max-width: 50%;
-    max-height: 86%;
+    max-width: 55%;
+    max-height: 93%;
 }
 
 .hero-images {
     display: flex;
     width: 66%;
     margin-left: 5%;
-    height: 850px;
 }
 
 .hero-copy {
     display: flex;
     flex-direction: column;
+    margin-right: 10%;
 }
 
 .hero {
@@ -42,8 +42,9 @@
 .boy-brow-copy {
     font-size: 40px;
     line-height: 40px;
-    width: 300px;
-    margin-top: 250px;
+    width: 80%;
+    // width: 300px;
+    margin-top: 70%;
     margin-bottom: 5%;
     margin-left: 30%;
     font-weight: 500;
@@ -90,7 +91,7 @@
 }
 
 .feat-container {
-    margin-top: -3%;
+    // margin-top: -3%;
 }
 
 .splash-index-image {

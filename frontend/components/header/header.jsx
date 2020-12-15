@@ -18,6 +18,7 @@ class Header extends React.Component {
     }
 
     handleCart(){
+        localStorage.setItem('cartObj', '{}')
         this.props.openModal('cart')
     }
 

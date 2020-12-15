@@ -44,8 +44,8 @@ class Cart extends React.Component {
         } else {
     
             return (
-                <div>
-                    <div>Your Bag: </div>
+                <div className="cart">
+                    <div className="your-bag">Your Bag: </div>
                     <br/>
                     {this.StoragePull().map(product => {
                         return (
@@ -57,8 +57,12 @@ class Cart extends React.Component {
                             </div>
                         )
                     })}
+                    <div>
+                        <div className="estimated-total">Estimated Total: ${this.CartTotal()}</div>
+                        <div onClick={this.props.closeModal} className="close-x">X</div>
 
-                    <div>Estimated Total: {this.CartTotal()}</div>
+                    </div>
+
                     {/* <button onClick={() => this.handleCheckOut()}>Check Out</button> */}
                 </div>
             )

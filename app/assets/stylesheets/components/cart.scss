@@ -1,4 +1,24 @@
 
+ .x {
+   cursor: pointer;
+    
+ }
+
+ .x:hover {
+    color: rgb(85, 85, 255)
+ }
+
+ .your-bag-header {
+    border-bottom: 1px solid lightgray;
+    height: 20px;
+    display: flex;
+    padding: 5%;
+ }
+
+ .your-bag {
+   margin-left: 25px;
+}
+
 
 .no-user-cart {
     font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -7,35 +27,78 @@
 
 }
 
-.cart-image {
-   height: 100px; 
+.check-out {
+     color: white;
+    background-color: black;
+    width: 83%;
+     padding: 3%;
+    border: 1px solid lightgray;
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex; 
+    justify-content: center;
+    cursor: pointer;
+}
+
+.estimated-total {
+    font-weight: 700;
+  font-size: 18px;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+     font-weight: 700;
+  font-size: 18px;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 8%;
+}
+
+.cart-image > img{
+   height: 150px; 
+   width: 120px;
+}
+
+.cart-remove {
+    // border: 1px solid lightgray;
+    // padding: 3px;
+    font-size: 12px;
 }
 
 .cart-item {
+    margin-bottom: 5%;
+}
+
+.cart-details {
     display: flex;
+    height: 100%;
+    // flex-wrap: wrap;
+}
+
+.info-remove {
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    // height: 1%;
-    width: 50%;
-
-//     display: flex;
-//   flex-direction: column;
-//   align-items: flex-start;
-//   justify-content: space-between;
-//   height: auto;
-//   min-height: 240px;
-//   margin: 0px 0px 16px;
-//   border: 1px solid rgba(0, 0, 0, 0.15);
-//   border-radius: 3px;
-//   background: rgb(255, 255, 255);
-//   width: 48%;
-
-    border: 1px solid green;
 }
 
-.your-bag {
-    border-bottom: 1px solid lightgray;
-    padding: 6%;
+.cart-item {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    // height: 50px;
+    // margin-left: 50px;
+    margin-top: 5px;
+
+    border: 1px solid lightgray;
+    background-color: rgb(247, 247, 247);
+    font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
+
+
 
 .cart-title, .cart-quantity {
   font-weight: 700;
@@ -49,7 +112,6 @@
 
 .cart {
     font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
-    display: flex;
 }
 
 .create-account-button-cart {

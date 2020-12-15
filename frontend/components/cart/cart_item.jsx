@@ -16,19 +16,25 @@ class CartItem extends React.Component {
     }
     render() { 
         return ( 
-            <div>
-                <div className="cart-item">
-                    <div className="cart-title">{this.props.product.title}</div>
-                    <div className="cart-quantity">{this.props.product.quantity} x</div>
-                    <div className="cart-price">${this.props.product.price}</div>
-                    <img className="cart-image" src={this.props.product.img}/>
+            <div className="cart-item">
+                <div className="cart-details">
 
-                    <button className="cart-remove"type="submit" onClick={() => this.handleRemove()}>Remove</button>
-                    <br/>
-                    <br/>
-        
+                    <div className="cart-image">
+                        <img src={this.props.product.img} alt="" />
+                    </div>
+
+                    <div className="info-remove">
+                        <div className="cart-item-info">
+                            <div className="cart-title"> {this.props.product.quantity} x {this.props.product.title}</div>
+                            <div className="cart-price">${this.props.product.price}</div>
+                        </div>
+
+                        <div>
+                            <button className="cart-remove" type="submit" onClick={() => this.handleRemove()}>Remove</button>
+                        </div>
+                    </div>
+
                 </div>
-                
             </div>
          );
     }

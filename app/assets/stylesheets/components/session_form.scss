@@ -11,10 +11,6 @@
     
 }
 
-.signup-input, .signin-input, .fname-input, .lname-input {
-    border-radius: 5%;
-}
-
 .signin-input {
     padding: 3%;
     border: 1px solid lightgray;
@@ -83,7 +79,6 @@ input {
     display: flex; 
     justify-content: center;
     cursor: pointer;
-    border-radius: 5%;
     width: 80%;
 
 }
@@ -108,8 +103,6 @@ span {
     display: flex; 
     justify-content: center;
     cursor: pointer;
-    border-radius: 5%;
-
 }
 .create-account-button {
       width: 83%;
@@ -120,7 +113,6 @@ span {
       display: flex; 
       justify-content: center;
       cursor: pointer;
-    border-radius: 5%;
 
 }
 

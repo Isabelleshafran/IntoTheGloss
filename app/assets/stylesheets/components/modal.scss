@@ -7,6 +7,7 @@
    left: 0;
    background: rgba(0, 0, 0, 0.7);
    z-index: 10;
+   
  }
 
  .modal-child {
@@ -16,6 +17,7 @@
     width: 28%;
     height: 100%;
     right: 0px;
+    overflow: scroll;
     font-family: "Apercu Pro", -apple-system, BlinkMacSystemFont, Helvetica, "Helvetica Neue", Arial, sans-serif;
  }
 

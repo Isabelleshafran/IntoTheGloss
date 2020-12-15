@@ -45,7 +45,10 @@ class Cart extends React.Component {
     
             return (
                 <div>
-                    <div className="your-bag">Your Bag: </div>
+                    <div className="your-bag-header">
+                        <div onClick={this.props.closeModal} className="x">X</div>
+                        <div className="your-bag">Your Bag: </div>
+                    </div>
                     <br/>
 
                     <div className="cart">
@@ -62,12 +65,14 @@ class Cart extends React.Component {
 
                     </div>
                     <div>
-                        <div className="estimated-total">Estimated Total: ${this.CartTotal()}</div>
-                        <div onClick={this.props.closeModal} className="close-x">X</div>
+                        <div className="cart-total">
+                            <div className="estimated-total">Estimated Total: </div>
+                            <div>${this.CartTotal()}</div>
+                        </div>
 
                     </div>
 
-                    {/* <button onClick={() => this.handleCheckOut()}>Check Out</button> */}
+                    <button className="check-out">Check Out</button>
                 </div>
             )
         }

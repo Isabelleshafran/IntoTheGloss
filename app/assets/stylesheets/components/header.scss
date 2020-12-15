@@ -3,6 +3,7 @@
     font-weight: bold;
     font-size: 20px;
     font-style: italic;
+    margin-right: 6px;
 }
 
 
@@ -27,12 +28,13 @@
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    
+    // border: 1px solid blue;
 }
 
 .right-nav {
     display: flex;
     margin-right: 75px;
+    // border: 1px solid red;
     
     .fas.fa-shopping-cart:hover {
        cursor: pointer;
@@ -64,12 +66,33 @@ i.far.fa-user {
 }
 
 i.fas.fa-search {
-    margin-left: 75px;
-    cursor: pointer;
-  
+    top: 0;
 }
 
-i.far.fa-user:hover, .close-x:hover, .fas.fa-search:hover, .fas.fa-shopping-cart:hover {
+.search {
+    // border: 1px solid green;
+    display: flex;
+    width: 8%;
+    float: top;
+    // align-items: center;
+    // margin-bottom: 30px;
+    margin-left: 70px;
+    // float: top;
+}
+
+.searchtext {
+    margin-left: 10px;
+    // height: 50px;
+    // border: 1px solid pink;
+    // width: 100%;
+    margin-top: -40px;
+
+}
+
+
+
+
+i.far.fa-user:hover, .close-x:hover, .fas.fa-shopping-cart:hover {
     color: rgb(85, 85, 255)
 }
 

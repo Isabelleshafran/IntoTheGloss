@@ -22,12 +22,20 @@ class Header extends React.Component {
         this.props.openModal('cart')
     }
 
+    handleSearch(){
+        <input type="text" className="input" placeholder="search..." /> 
+    }
+
     render() { 
         return ( 
             <div>
                 <nav className="main-header">
                     <div className="top-header">
-                        <div><i className="fas fa-search"></i></div>
+                        <div className="search">
+                            <i className="fas fa-search"></i>
+                            <input type="text" className="searchtext" placeholder="search..." />
+                        </div>
+                        
                         <Link to="/"><div className="glossier">IntoTheGloss.</div></Link>
                         <div className="right-nav">
                             <div onClick={() => this.handleClick()}><i className="far fa-user"></i></div>

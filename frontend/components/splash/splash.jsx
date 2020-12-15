@@ -24,7 +24,7 @@ class Splash extends React.Component {
                             {/* <h3 className="boy-brow-copy">Boy Brow is back.</h3> */}
                             <h3 className="boy-brow-copy">Extremely giftable gifts.</h3>
 
-                            <Link to={`/makeup/`}><button className="boy-brow-shop-now">Shop Now</button></Link>
+                            <Link to={`/shopall/`}><button className="boy-brow-shop-now">Shop Now</button></Link>
                         </div>
                     </div>
                     <div className="feat-container">

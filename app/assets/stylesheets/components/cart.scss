@@ -61,8 +61,7 @@
 }
 
 .cart-remove {
-    // border: 1px solid lightgray;
-    // padding: 3px;
+
     font-size: 12px;
 }
 
@@ -73,7 +72,6 @@
 .cart-details {
     display: flex;
     height: 100%;
-    // flex-wrap: wrap;
 }
 
 .info-remove {
@@ -84,15 +82,9 @@
 }
 
 .cart-item {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
     width: 100%;
     height: 150px;
-    // height: 50px;
-    // margin-left: 50px;
     margin-top: 5px;
-
     border: 1px solid lightgray;
     background-color: rgb(247, 247, 247);
     font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;

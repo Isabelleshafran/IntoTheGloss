@@ -26,6 +26,8 @@ class CartItem extends React.Component {
                     <div className="info-remove">
                         <div className="cart-item-info">
                             <div className="cart-title"> {this.props.product.quantity} x {this.props.product.title}</div>
+                            <div className="cart-title"> {this.props.product.shade}</div>
+
                             <div className="cart-price">${this.props.product.price}</div>
                         </div>
 

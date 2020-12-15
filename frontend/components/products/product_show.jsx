@@ -5,7 +5,19 @@ import ShadeShow from '../shades/shade_index'
 class ProductShow extends React.Component {
     constructor(props) {
         super(props);
+
+        this.state = {
+            color: ''
+        }
+
+        this.handleColor = this.handleColor.bind(this)
         
+    }
+
+
+    handleColor(e) {
+        this.setState({ color: e.target.dataset.shade })
+        e.target.classList.toggle('selected')
     }
 
     componentDidMount(){
@@ -19,8 +31,7 @@ class ProductShow extends React.Component {
         const title = this.props.product.title
         const price = this.props.product.price
         const img = this.props.product.imgUrl
-
-        console.log(this.props.product)
+        const shade = this.state.color
         
         let quantity;
 
@@ -30,7 +41,7 @@ class ProductShow extends React.Component {
             quantity = cart[id].quantity + 1
         }
 
-        cart[id] = {id, title, quantity, price, img}
+        cart[id] = {id, title, quantity, price, img, shade}
         
         localStorage.setItem('cartObj', JSON.stringify(cart))
   
@@ -43,6 +54,7 @@ class ProductShow extends React.Component {
             return null
         } else {
             const color = Object.values(this.props.product.shades)
+            let selectedshade = this.state.color === "" ? "" : this.state.color
             return ( 
                 <div className="product-show">
 
@@ -65,9 +77,10 @@ class ProductShow extends React.Component {
 
                         <div>
                         
-                            <div className="shade-index" > 
-                                {color.map(shade => <ShadeShow shade={shade} key={shade.name} />)}
+                            <div className="shade-index" onClick={this.handleColor}> 
+                                {color.map((shade) => <ShadeShow shade={shade} key={shade.id} />)}
                             </div>
+                                <div className="selectedshade">{selectedshade}</div>
             
 
                             <button className="product-show-price" onClick={() => this.handleCart()}>

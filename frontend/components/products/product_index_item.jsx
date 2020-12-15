@@ -15,6 +15,8 @@ class ProductIndexItem extends React.Component {
         const id = this.props.product.id
         const title = this.props.product.title
         const price = this.props.product.price
+        const img = this.props.product.imgUrl
+
 
         let quantity;
 
@@ -24,7 +26,7 @@ class ProductIndexItem extends React.Component {
             quantity = cart[id].quantity + 1
         }
 
-        cart[id] = { id, title, quantity, price }
+        cart[id] = { id, title, quantity, price, img}
 
         localStorage.setItem('cartObj', JSON.stringify(cart))
 

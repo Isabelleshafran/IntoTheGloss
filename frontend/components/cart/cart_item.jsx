@@ -21,6 +21,7 @@ class CartItem extends React.Component {
                     <div className="cart-title">{this.props.product.title}</div>
                     <div className="cart-quantity">{this.props.product.quantity} x</div>
                     <div className="cart-price">${this.props.product.price}</div>
+                    <img className="cart-image" src={this.props.product.img}/>
 
                     <button className="cart-remove"type="submit" onClick={() => this.handleRemove()}>Remove</button>
                     <br/>

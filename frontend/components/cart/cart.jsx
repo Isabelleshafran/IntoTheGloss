@@ -44,19 +44,23 @@ class Cart extends React.Component {
         } else {
     
             return (
-                <div className="cart">
+                <div>
                     <div className="your-bag">Your Bag: </div>
                     <br/>
-                    {this.StoragePull().map(product => {
-                        return (
-                            <div>
-                                <CartItem product={product} 
-                                key={product.title}
-                                openModal={this.props.openModal}
-                                closeModal={this.props.closeModal}/>
-                            </div>
-                        )
-                    })}
+
+                    <div className="cart">
+                        {this.StoragePull().map(product => {
+                            return (
+                                <div>
+                                    <CartItem product={product} 
+                                    key={product.title}
+                                    openModal={this.props.openModal}
+                                    closeModal={this.props.closeModal}/>
+                                </div>
+                            )
+                        })}
+
+                    </div>
                     <div>
                         <div className="estimated-total">Estimated Total: ${this.CartTotal()}</div>
                         <div onClick={this.props.closeModal} className="close-x">X</div>

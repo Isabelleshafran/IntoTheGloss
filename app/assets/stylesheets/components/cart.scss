@@ -7,21 +7,49 @@
 
 }
 
+.cart-image {
+   height: 100px; 
+}
 
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    // height: 1%;
+    width: 50%;
+
+//     display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   justify-content: space-between;
+//   height: auto;
+//   min-height: 240px;
+//   margin: 0px 0px 16px;
+//   border: 1px solid rgba(0, 0, 0, 0.15);
+//   border-radius: 3px;
+//   background: rgb(255, 255, 255);
+//   width: 48%;
+
+    border: 1px solid green;
+}
 
 .your-bag {
     border-bottom: 1px solid lightgray;
     padding: 6%;
 }
 
+.cart-title, .cart-quantity {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .no-user-header {
     margin-left: 10%;
-
 }
 
 .cart {
     font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
- 
+    display: flex;
 }
 
 .create-account-button-cart {

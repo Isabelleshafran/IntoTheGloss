@@ -7,21 +7,37 @@ class CartItem extends React.Component {
     }
 
     handleRemove(){
-        const string = JSON.stringify(this.props.product)
-        console.log(string)
-        localStorage.removeItem(string)
+        const cartItems = JSON.parse(localStorage.getItem('cartObj'))
+        // cartItems
+        const id = this.props.product.id
+        // console.log(id)
+        // console.log(this.props.product)
+        // localStorage.getItem(string)
+
+        delete cartItems[id]
+        // localStorage.removeItem(string)
+
+        localStorage.setItem('cartObj', JSON.stringify(cartItems))
+
+        this.props.closeModal()
+
+        // localStorage.removeItem(id)
     }
-
-
     render() { 
         return ( 
             <div>
-                {/* {console.log(this.props.product)} */}
-                <div>Title: {this.props.product[1]}</div>
-                <div>Quantity: {this.props.product[2]}</div>
-                <button type="submit" onClick={() => this.handleRemove()}>Remove</button>
-                <br/>
-                <br/>
+                <div>
+                    {console.log(this.props.product)}
+                    <div>Title: {this.props.product.title}</div>
+                    <div>Quantity: {this.props.product.quantity}</div>
+                    <div>Price: {this.props.product.price}</div>
+
+                    <button type="submit" onClick={() => this.handleRemove()}>Remove</button>
+                    <br/>
+                    <br/>
+        
+                </div>
+                
             </div>
          );
     }

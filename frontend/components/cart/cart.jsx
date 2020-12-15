@@ -9,13 +9,30 @@ class Cart extends React.Component {
 
     StoragePull(){
         const cartItems = JSON.parse(localStorage.getItem('cartObj'))
-        let arr = []
-        for (let id in cartItems) {
-            arr.push([id, cartItems[id].title, cartItems[id].quantity])
+        // console.log(cartItems)
+        // let arr = []
+        // for (let id in cartItems) {
+        //     arr.push([id, cartItems[id].title, cartItems[id].quantity])
+        // }
+
+        // console.log(arr)
+        // return arr;
+
+        // console.log(cartItems)
+
+        return Object.values(cartItems)
+
+    }
+
+    CartTotal() {
+        let obj = this.StoragePull()
+        let total = 0
+
+        for(let id in obj){
+            total += (obj[id].price * obj[id].quantity)
         }
 
-        console.log(arr)
-        return arr;
+        return total
     }
     
     render() { 
@@ -41,12 +58,20 @@ class Cart extends React.Component {
                     <div>Your Bag: </div>
                     <br/>
                     {this.StoragePull().map(product => {
+                        // console.log(product)
                         return (
                             <div>
-                                <CartItem product={product} key={product[0]}/>
+                                <CartItem product={product} 
+                                key={product.id}
+                                openModal={this.props.openModal}
+                                closeModal={this.props.closeModal}/>
                             </div>
                         )
                     })}
+
+                    <div>Estimated Total: {this.CartTotal()}</div>
+
+                    {/* {localStorage.clear()} */}
                 </div>
             )
         }

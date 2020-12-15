@@ -17,13 +17,23 @@ class ProductShow extends React.Component {
 
         const id = this.props.product.id
         const title = this.props.product.title
-       
+        const price = this.props.product.price
+        
+        let quantity;
 
-        const quantity = 1
-        // write logic here to get quanity so const quantity = GetQuantity()
+        
+        // ERROR: SITE BREAKS IF YOU OPEN CART WHEN EMPTY AND REMOVE ITEM
+        
+        // console.log(cart[id])
+        // debugger
+        if(!cart[id]){
+            quantity = 1
+        } else {
+            quantity = cart[id].quantity + 1
+        }
 
-        cart[id] = {title, quantity}
-
+        cart[id] = {id, title, quantity, price}
+        
         localStorage.setItem('cartObj', JSON.stringify(cart))
   
         this.props.openModal('cart')

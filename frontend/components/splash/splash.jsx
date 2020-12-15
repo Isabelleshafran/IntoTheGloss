@@ -27,9 +27,9 @@ class Splash extends React.Component {
                             <Link to={`/makeup/`}><button className="boy-brow-shop-now">Shop Now</button></Link>
                         </div>
                     </div>
-
-                    <FeaturedImagesContainer />
-
+                    <div className="feat-container">
+                        <FeaturedImagesContainer />
+                    </div>
                     <div className="pink-masthead">
                         <h1>Beauty inspired by real life.</h1>
                         <br/>

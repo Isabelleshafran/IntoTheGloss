@@ -12,13 +12,13 @@
 .left-hero {
     max-width: 50%;
     margin-left: 6%;
-    max-height: 90%;
+    max-height: 86%;
 }
 
 .right-hero {
     margin-left: 2%;
     max-width: 50%;
-    max-height: 90%;
+    max-height: 86%;
 }
 
 .hero-images {
@@ -68,11 +68,11 @@
     display: flex;
     flex-wrap: nowrap;
     font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
-    margin-left: 10%;
+    margin-left: 8%;
     align-items: center;
     overflow-x: auto;
     height: 525px;
-    width: 80%;
+    width: 83%;
 }
 
 .splash-products::-webkit-scrollbar-track {
@@ -89,17 +89,21 @@
     background-color: rgb(216, 215, 215);
 }
 
+.feat-container {
+    margin-top: -3%;
+}
+
 .splash-index-image {
     height: 372px;
     width: 270px;
 }
 .feature-text {
-    margin: 1%;
+    // margin: 1%;
     display: flex;
     justify-content: space-between;
-    margin-top: 2%;
-    margin-left: 3%;
-    margin-right: 3%;
+    // margin-top: 2%;
+    margin-left: 9%;
+    margin-right: 9%;
     font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 

@@ -21,11 +21,6 @@ class ProductShow extends React.Component {
         
         let quantity;
 
-        
-        // ERROR: SITE BREAKS IF YOU OPEN CART WHEN EMPTY AND REMOVE ITEM
-        
-        // console.log(cart[id])
-        // debugger
         if(!cart[id]){
             quantity = 1
         } else {
@@ -40,7 +35,7 @@ class ProductShow extends React.Component {
     }
 
     render() { 
-        // console.log(this.props)
+ 
         if(!this.props.product){
             return null
         } else {

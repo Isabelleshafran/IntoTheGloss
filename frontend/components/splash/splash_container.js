@@ -8,7 +8,6 @@ const msp = (state) => ({
 })
 
 const mdp = (dispatch) => ({
-    // fetchProducts: () => dispatch(fetchProducts()),
     fetchProducts: (name) => dispatch(fetchProduct(name))
 })
 

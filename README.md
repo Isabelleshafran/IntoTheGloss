@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## IntoTheGloss
 
-Things you may want to cover:
+IntoTheGloss is a beauty and skincare e-commerce site inspired by Glossier. 
 
-* Ruby version
+Live site: [IntoTheGloss](https://isabelle-glossier.herokuapp.com/#/)
 
-* System dependencies
+## Technologies Used 
+* Ruby on Rails
+* Postgres SQL 
+* Javascript
+* React 
+* Redux
+* LocalStorage
 
-* Configuration
+## Functionality 
 
-* Database creation
+### Splash Page 
 
-* Database initialization
+### Sign In/Sign Up
 
-* How to run the test suite
+### Product Index 
 
-* Services (job queues, cache servers, search engines, etc.)
+### Product Show
 
-* Deployment instructions
+### Shopping Cart
 
-* ...
+### Search Bar

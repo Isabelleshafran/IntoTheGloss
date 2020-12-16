@@ -39,18 +39,32 @@ class ProductIndex extends React.Component {
 
     render() { 
         const { products } = this.props;
-        return ( 
-            <div>
-                <h1 className="product-title">{this.title()}</h1>
-                <div className="products">
-                    {products.map(product => {
-                        return (
-                         <ProductIndexItem key={product.id} product={product} category={this.props.category} openModal={this.props.openModal}/>   
-                        )
-                    })}
+        if(products.length === 0) {
+            return (
+                <div className="no-results-main">
+                    <h1 className="no-results">no results match your search</h1>
+                    <h2 className='popular-search'>most popular searches</h2>
+                    <div className="search-examples">
+                        <ul>cloud paint</ul>
+                        <ul>lip</ul>
+                        <ul>boy brow</ul>
+                    </div>
                 </div>
-            </div>
-         );
+            )
+        } else {
+            return ( 
+                <div>
+                    <h1 className="product-title">{this.title()}</h1>
+                    <div className="products">
+                        {products.map(product => {
+                            return (
+                             <ProductIndexItem key={product.id} product={product} category={this.props.category} openModal={this.props.openModal}/>   
+                            )
+                        })}
+                    </div>
+                </div>
+             );
+        }
     }
 }
  

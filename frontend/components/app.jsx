@@ -9,7 +9,6 @@ import {
 
 import Modal from './modal/modal';
 import HeaderContainer from './header/header_container'
-import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import ProductIndexContainer from "./products/product_index_container";
 import SplashContainer from './splash/splash_container';
 import ProductShowContainer from './products/product_show_container';

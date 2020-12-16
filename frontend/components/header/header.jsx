@@ -24,7 +24,14 @@ class Header extends React.Component {
     }
 
     handleCart(){
-        localStorage.setItem('cartObj', '{}')
+
+        // maybe add if logic to check if it exists else do that 
+
+        localStorage.getItem('cartObj') 
+        
+        // localStorage.setItem('cartObj', '{}')
+
+        // console.log(localStorage.getItem('cartObj'))
         this.props.openModal('cart')
     }
 

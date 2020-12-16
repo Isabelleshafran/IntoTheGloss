@@ -15,16 +15,6 @@ class Account extends React.Component {
     }
 
     handleClick() {
-
-        // this removes items from cart when sign out -- fixes issue of cart staying for every user 
-
-        const items = JSON.parse(localStorage.getItem('cartObj'))
-        for (let key in items) {
-            delete items[key]
-            localStorage.setItem('cartObj', JSON.stringify(items))
-        }
-        // 
-        
         this.props.logout()
         this.props.openModal('signin')
     }

@@ -42,7 +42,7 @@ class Cart extends React.Component {
                     </div>
                     <div className='bottom-cart'>
                         <img className="glogo" src={window.shopping_cart_g} />
-                        <div className="create-account-button-cart" onClick={() => dispatch(this.props.openModal('signup'))}>Create an Account Here</div>
+                        <div className="create-account-button-cart" onClick={() => this.props.openModal('signup')}>Create an Account Here</div>
                     </div>
                 </div>
             )

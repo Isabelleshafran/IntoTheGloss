@@ -43,7 +43,16 @@ class Header extends React.Component {
             let search = searchTerm.split(' ').map(word => this.capitalize(word)).join(' ')
             this.props.fetchSearch(search).then(this.props.history.push('/search'))
         }
+
     }
+
+    // componentDidUpdate(prevProps) {
+    //     // debugger
+    //     if (prevProps.match.path !== this.props.match.path) {
+    //         this.setState({ search: ''})
+    //     }
+    // }
+
 
     render() { 
         return ( 

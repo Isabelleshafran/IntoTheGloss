@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // testing 
-    // window.getState = store.getState;
+    window.getState = store.getState;
     // window.dispatch = store.dispatch
     //     window.fetchSearch = fetchSearch
     // testing 

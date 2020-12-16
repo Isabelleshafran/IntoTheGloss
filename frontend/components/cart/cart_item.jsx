@@ -9,7 +9,6 @@ class CartItem extends React.Component {
     handleRemove(){
         const cartItems = JSON.parse(localStorage.getItem('cartObj'))
         const id = this.props.product.id
-        // localStorage.removeItem('id')
         delete cartItems[id]
         localStorage.setItem('cartObj', JSON.stringify(cartItems))
 

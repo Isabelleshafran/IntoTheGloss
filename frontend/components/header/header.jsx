@@ -41,27 +41,9 @@ class Header extends React.Component {
             let searchTerm = this.state.search;
             let search = searchTerm.split(' ').map(word => this.capitalize(word)).join(' ')
             this.props.fetchSearch(search).then(this.props.history.push('/search'))
+            this.setState({search: ""})
         }
-
     }
-
-    // componentWillUnmount(){
-    //     clearInterval(this.state.search)
-    // }
-
-    // componentDidMount(){
-    //     setTimeout(() => {
-    //         this.setState({search: ''})
-    //     }, 1000);
-    // }
-
-    // componentDidUpdate(prevProps) {
-    //     // debugger
-    //     if (prevProps.match.path !== this.props.match.path) {
-    //         this.setState({search: ''})
-    //     }
-    // }
-
 
     render() { 
         return ( 
@@ -70,7 +52,7 @@ class Header extends React.Component {
                     <div className="top-header">
                         <div className="search">
                             <i className="fas fa-search"></i>
-                            <input onChange={this.handleSearch} onKeyPress={this.handleSubmit} type="text" className="searchtext" placeholder="search..." />
+                            <input onChange={this.handleSearch} onKeyPress={this.handleSubmit} value={this.state.search} type="text" className="searchtext" placeholder="search..." />
                         </div>
                         
                         <Link to="/"><div className="glossier">IntoTheGloss.</div></Link>

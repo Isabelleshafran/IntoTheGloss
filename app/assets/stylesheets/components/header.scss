@@ -28,13 +28,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    // border: 1px solid blue;
 }
 
 .right-nav {
     display: flex;
     margin-right: 75px;
-    // border: 1px solid red;
     
     .fas.fa-shopping-cart:hover {
        cursor: pointer;
@@ -70,21 +68,14 @@ i.fas.fa-search {
 }
 
 .search {
-    // border: 1px solid green;
     display: flex;
     width: 8%;
     float: top;
-    // align-items: center;
-    // margin-bottom: 30px;
     margin-left: 70px;
-    // float: top;
 }
 
 .searchtext {
     margin-left: 10px;
-    // height: 50px;
-    // border: 1px solid pink;
-    // width: 100%;
     margin-top: -40px;
 
 }

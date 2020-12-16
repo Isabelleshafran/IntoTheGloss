@@ -12,6 +12,7 @@ class ProductIndex extends React.Component {
         if(this.props.category !== 'search') {
             this.props.fetchProducts(this.props.category)  
         }
+        window.scrollTo(0, 0);
     }
 
     componentDidUpdate(prevProps){

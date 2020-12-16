@@ -6,7 +6,6 @@ class Account extends React.Component {
         super(props); 
 
         this.handleClick = this.handleClick.bind(this);
-        // this.cart = this.cart.bind(this)
     }
 
 

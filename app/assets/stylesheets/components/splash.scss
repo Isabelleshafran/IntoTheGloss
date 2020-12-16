@@ -3,10 +3,8 @@
     width: 150px; 
     height: 150px;
     top: 28%;
-    // left: -3%;
     right: -4%;
     position: relative;
-    // z-index: -1;
 }
 
 .left-hero {
@@ -37,20 +35,16 @@
 .hero {
     display: flex;
     font-family: "Apercu Pro", -apple-system, BlinkMacSystemFont, Helvetica, "Helvetica Neue", Arial, sans-serif;
-    // padding-top: px;
 }
 
 .boy-brow-copy {
     font-size: 40px;
     line-height: 40px;
     width: 80%;
-    // width: 300px;
     margin-top: 70%;
     margin-bottom: 5%;
     margin-left: 30%;
     font-weight: 500;
-
-
 }
 
 .boy-brow-shop-now {
@@ -90,19 +84,13 @@
     background-color: rgb(216, 215, 215);
 }
 
-.feat-container {
-    // margin-top: -3%;
-}
-
 .splash-index-image {
     height: 372px;
     width: 270px;
 }
 .feature-text {
-    // margin: 1%;
     display: flex;
     justify-content: space-between;
-    // margin-top: 2%;
     margin-left: 9%;
     margin-right: 9%;
     font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -125,8 +113,6 @@
     letter-spacing: 1px;
     font-size: 12px;
     line-height: 14px;
-    // margin-top: 2%;
-    // margin-left: 2%
 }
 
 .boy-brow-shop-now:hover {
@@ -148,7 +134,4 @@
     line-height: 40px;
 }
 
-// .pink-masthead > h3 {
-
-// }
 

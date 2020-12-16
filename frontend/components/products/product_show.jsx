@@ -22,6 +22,7 @@ class ProductShow extends React.Component {
 
     componentDidMount(){
         this.props.fetchProduct(this.props.match.params.productId)
+        window.scrollTo(0, 0);
     }
 
     handleCart(){

@@ -32,10 +32,15 @@ class Header extends React.Component {
         this.setState({search: e.currentTarget.value})
     }
 
+    capitalize(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1)
+    }
+
     handleSubmit(e){
         e.preventDefault();
         let searchTerm = this.state.search;
-        this.props.fetchSearch(searchTerm).then(() => this.props.history.push('/search'))
+        let search = searchTerm.split(' ').map(word => this.capitalize(word)).join(' ')
+        this.props.fetchSearch(search).then(this.props.history.push('/search'))
     }
 
     render() { 

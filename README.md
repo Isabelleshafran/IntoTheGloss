@@ -19,6 +19,9 @@ Live site: [IntoTheGloss](https://isabelle-glossier.herokuapp.com/#/)
 ## Functionality 
 
 ### Splash Page 
+ * Users are able to view featured items on main page. 
+ 
+![text](https://github.com/Isabelleshafran/IntoTheGloss/blob/master/app/assets/images/readme/SplashRec.mov)
 
 ### Sign In/Sign Up
 

@@ -37,10 +37,12 @@ class Header extends React.Component {
     }
 
     handleSubmit(e){
-        e.preventDefault();
-        let searchTerm = this.state.search;
-        let search = searchTerm.split(' ').map(word => this.capitalize(word)).join(' ')
-        this.props.fetchSearch(search).then(this.props.history.push('/search'))
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            let searchTerm = this.state.search;
+            let search = searchTerm.split(' ').map(word => this.capitalize(word)).join(' ')
+            this.props.fetchSearch(search).then(this.props.history.push('/search'))
+        }
     }
 
     render() { 
@@ -50,8 +52,7 @@ class Header extends React.Component {
                     <div className="top-header">
                         <div className="search">
                             <i className="fas fa-search"></i>
-                            <input onChange={this.handleSearch}type="text" className="searchtext" placeholder="search..." />
-                            <button className="searchtext" type="submit" onClick={this.handleSubmit}>button</button>
+                            <input onChange={this.handleSearch} onKeyPress={this.handleSubmit} type="text" className="searchtext" placeholder="search..." />
                         </div>
                         
                         <Link to="/"><div className="glossier">IntoTheGloss.</div></Link>

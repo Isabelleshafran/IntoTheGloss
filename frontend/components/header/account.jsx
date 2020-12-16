@@ -14,6 +14,7 @@ class Account extends React.Component {
     }
 
     handleClick() {
+        localStorage.setItem(('cartObj'), '{}')
         this.props.logout()
         this.props.openModal('signin')
     }

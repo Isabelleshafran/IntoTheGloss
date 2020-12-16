@@ -58,7 +58,7 @@ class Header extends React.Component {
     // componentDidUpdate(prevProps) {
     //     // debugger
     //     if (prevProps.match.path !== this.props.match.path) {
-    //         clearInterval(this.state.search)
+    //         this.setState({search: ''})
     //     }
     // }
 

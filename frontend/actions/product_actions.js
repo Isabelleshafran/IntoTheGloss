@@ -23,3 +23,8 @@ export const fetchProduct = (productId) => dispatch => (
         .then(product => {
             dispatch(receiveProduct(product))})
 )
+
+export const fetchSearch = searchTerm => dispatch => (
+    APIUtil.fetchSearch(searchTerm)
+        .then(products => dispatch(receiveProducts(products)))
+)

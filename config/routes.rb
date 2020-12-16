@@ -5,6 +5,9 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy]
     resources :products, only: [:index, :show]
   end 
+  
+  get '/api/products/search/:search_term', to: 'api/products#search'
+
 
   root "static_pages#root"
 end

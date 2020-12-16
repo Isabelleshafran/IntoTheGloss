@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import {login, signup, logout } from './actions/session_actions'
-import { fetchProducts, fetchProduct } from './actions/product_actions'
+import { fetchProducts, fetchProduct, fetchSearch } from './actions/product_actions'
 import configureStore from './store/store'
 import Root from './components/root';
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    // const store = configureStore();
 
     let store;
     if (window.currentUser) {
@@ -24,13 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // testing 
-    window.getState = store.getState;
-    window.dispatch = store.dispatch;
-    // window.login = login 
-    // window.signup = signup 
-    // window.logout = logout
-        window.fetchProducts = fetchProducts
-        window.fetchProduct = fetchProduct
+    // window.getState = store.getState;
+    // window.dispatch = store.dispatch
+    //     window.fetchSearch = fetchSearch
     // testing 
 
     const root = document.getElementById("root")

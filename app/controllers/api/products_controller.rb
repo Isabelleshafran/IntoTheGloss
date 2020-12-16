@@ -19,4 +19,16 @@ class Api::ProductsController < ApplicationController
             render "api/products/show"
         end
     end
+
+    def search 
+        # use LIKE keyword sql query string 
+        # @products = Product.where(title: params[:search_term])
+        
+        # LIKE 
+        @products = Product.where("title = ?", params[:search_term])
+        # debugger
+        # Client.where("orders_count = ?", params[:orders])
+
+        render "api/products/index"
+    end
 end

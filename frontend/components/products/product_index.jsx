@@ -9,9 +9,9 @@ class ProductIndex extends React.Component {
     }
 
     componentDidMount(){
-        this.props.fetchProducts(this.props.category)  
-        
-
+        if(this.props.category !== 'search') {
+            this.props.fetchProducts(this.props.category)  
+        }
     }
 
     componentDidUpdate(prevProps){
@@ -27,9 +27,12 @@ class ProductIndex extends React.Component {
             return 'Shop All Makeup'
         } else if (this.props.category === 'skincare') {
             return 'Shop All Skincare'
+        } else if (this.props.category === 'search') {
+            return 'Search Results'
         } else {
             return 'Shop All Body'
         }
+    
     }
 
 
@@ -37,7 +40,7 @@ class ProductIndex extends React.Component {
         const { products } = this.props;
         return ( 
             <div>
-                <h1 className="product-title">{this.title(this.props.catgory)}</h1>
+                <h1 className="product-title">{this.title()}</h1>
                 <div className="products">
                     {products.map(product => {
                         return (

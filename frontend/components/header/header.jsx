@@ -6,7 +6,13 @@ import { Link } from 'react-router-dom'
 class Header extends React.Component {
     constructor(props) {
         super(props);
-    
+
+        this.state = {
+            search: ''
+        }
+
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleSearch = this.handleSearch.bind(this)
     }
 
     handleClick() {
@@ -22,8 +28,14 @@ class Header extends React.Component {
         this.props.openModal('cart')
     }
 
-    handleSearch(){
-        <input type="text" className="input" placeholder="search..." /> 
+    handleSearch(e) {
+        this.setState({search: e.currentTarget.value})
+    }
+
+    handleSubmit(e){
+        e.preventDefault();
+        let searchTerm = this.state.search;
+        this.props.fetchSearch(searchTerm).then(() => this.props.history.push('/search'))
     }
 
     render() { 
@@ -33,7 +45,8 @@ class Header extends React.Component {
                     <div className="top-header">
                         <div className="search">
                             <i className="fas fa-search"></i>
-                            <input type="text" className="searchtext" placeholder="search..." />
+                            <input onChange={this.handleSearch}type="text" className="searchtext" placeholder="search..." />
+                            <button className="searchtext" type="submit" onClick={this.handleSubmit}>button</button>
                         </div>
                         
                         <Link to="/"><div className="glossier">IntoTheGloss.</div></Link>

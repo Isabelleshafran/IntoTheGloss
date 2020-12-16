@@ -1,5 +1,6 @@
 import { RECEIVE_PRODUCTS, RECEIVE_PRODUCT } from '../actions/product_actions';
 
+
 const ProductsReducer = (state = {}, action) => {
     Object.freeze(state);
     switch (action.type) {

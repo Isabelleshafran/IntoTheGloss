@@ -6,6 +6,8 @@ IntoTheGloss is a beauty and skincare e-commerce site inspired by Glossier.
 
 Live site: [IntoTheGloss](https://isabelle-glossier.herokuapp.com/#/)
 
+!(https://github.com/Isabelleshafran/IntoTheGloss/blob/master/app/assets/images/readme/Splash.png)
+
 ## Technologies Used 
 * Ruby on Rails
 * Postgres SQL 

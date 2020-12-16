@@ -39,7 +39,7 @@ class ProductIndex extends React.Component {
 
     render() { 
         const { products } = this.props;
-        if(products.length === 0) {
+        if(this.props.category === 'search' && products.length === 0) {
             return (
                 <div className="no-results-main">
                     <h1 className="no-results">no results match your search</h1>

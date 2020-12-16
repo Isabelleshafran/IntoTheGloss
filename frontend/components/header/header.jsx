@@ -24,14 +24,6 @@ class Header extends React.Component {
     }
 
     handleCart(){
-
-        // maybe add if logic to check if it exists else do that 
-
-        localStorage.getItem('cartObj') 
-        
-        // localStorage.setItem('cartObj', '{}')
-
-        // console.log(localStorage.getItem('cartObj'))
         this.props.openModal('cart')
     }
 
@@ -53,10 +45,20 @@ class Header extends React.Component {
 
     }
 
+    // componentWillUnmount(){
+    //     clearInterval(this.state.search)
+    // }
+
+    // componentDidMount(){
+    //     setTimeout(() => {
+    //         this.setState({search: ''})
+    //     }, 1000);
+    // }
+
     // componentDidUpdate(prevProps) {
     //     // debugger
     //     if (prevProps.match.path !== this.props.match.path) {
-    //         this.setState({ search: ''})
+    //         clearInterval(this.state.search)
     //     }
     // }
 

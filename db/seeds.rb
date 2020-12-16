@@ -300,6 +300,38 @@ p22 = Product.create!(
     category_id: c3.id
 )
 
+p24 = Product.create!(
+    title: "Body Hero Duo",
+    description: "oil wash + perfecting cream", 
+    details: "A luxe shower (and post-shower) experience. Our signature body cleanser and moisturizer paired together for fresh, soft, glowy skin all over.", 
+    whyspecial: "Inspired by oil cleansers and luxurious creams usually used above the neck, the Body Hero Duo cleans, hydrates, and enhances the other 90% of you. Daily Oil Wash is made with a blend of seven oils that attract grime and sweat like a magnet, turning into a soft froth that washes away without drying skin", 
+    img_url: "24.jpg",     
+    price: 35, 
+    category_id: c3.id
+)
+
+p25 = Product.create!(
+    title: "Body Hero Dry-Touch Oil Mist",
+    description: "dry-touch oil mist", 
+    details: "A quick escape into luxury. An intoxicating, Neroli-scented dry body oil (in a mess-free spritz bottle) that moisturizes in a flash.", 
+    whyspecial: "Three antioxidant-rich oils—Sunflower Seed, Grapeseed, and Oat—deeply nourish, moisturize, and soothe dry, tight skin. To really seal in moisture: apply after the shower on your lightly towel-dried (but still damp) body. Sea Fennel Extract smooths and evens the look of skin tone and helps improve radiance", 
+    img_url: "25.jpg",     
+    price: 28, 
+    category_id: c3.id
+)
+
+p26 = Product.create!(
+    title: "The Sue Bird Set",
+    description: "the basketball legend’s top 4", 
+    details: "Sue’s post-game routine for clean, silky smooth skin. A glow-enhancing body cream, a body oil that dries in seconds, a biodegradable exfoliating bar, plus an antioxidant-packed lip balm—all recommended by basketball champion Sue Bird.", 
+    whyspecial: "Daily Perfecting Cream: 'This is part of my everyday routine. It smells amazing, and also goes on super smooth!. Dry-Touch Oil Mist: 'I never like my skin to feel dry…ever! So I use this when I feel like my skin needs some pop. You don't need a lot of sprays—a little goes a long way.'", 
+    img_url: "26.jpg",     
+    price: 64, 
+    category_id: c3.id
+)
+
+
+
 
 s1 = Shade.create!(
     name: "Black", 

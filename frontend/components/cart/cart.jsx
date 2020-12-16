@@ -8,7 +8,7 @@ class Cart extends React.Component {
     }
 
     StoragePull(){
-        const cartItems = JSON.parse(localStorage.getItem('cartObj'))
+        const cartItems = JSON.parse(localStorage.getItem('cartObj')) || {}
         return Object.values(cartItems)
     }
 

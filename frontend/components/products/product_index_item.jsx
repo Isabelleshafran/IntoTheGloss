@@ -10,9 +10,7 @@ class ProductIndexItem extends React.Component {
     }
 
     handleCart() {
-        // const cart = JSON.parse(localStorage.getItem('cartObj')) || {}
-
-        const cart = JSON.parse(localStorage.getItem('cartObj'))
+        const cart = JSON.parse(localStorage.getItem('cartObj')) || {}
         
         const id = this.props.product.id
         const title = this.props.product.title

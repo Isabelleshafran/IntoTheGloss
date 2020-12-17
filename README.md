@@ -24,7 +24,7 @@ Live site: [IntoTheGloss](https://isabelle-glossier.herokuapp.com/#/)
  ![text](https://github.com/Isabelleshafran/IntoTheGloss/blob/master/app/assets/images/readme/splashvideo.gif?raw=true)
 
 ### Sign In/Sign Up
- * Users are able to sign in to an existing acctount, create a new account, or use demo user log in feature.
+ * Users are able to sign in to an existing acctount, create a new account, or use demo user log in feature all within the modal.
  
 ![text](https://github.com/Isabelleshafran/IntoTheGloss/blob/master/app/assets/images/readme/signup_signin.png?raw=true)
 

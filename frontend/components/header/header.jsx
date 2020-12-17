@@ -59,7 +59,7 @@ class Header extends React.Component {
                         <Link to="/"><div className="glossier">IntoTheGloss.</div></Link>
                         <div className="right-nav">
                             <div onClick={() => this.handleClick()}><i className="far fa-user"></i></div>
-                            <div onClick={() => this.handleCart()}><i className="fas fa-shopping-cart"></i></div>
+                            <div onClick={() => this.handleCart()}><i className="fas fa-shopping-bag"></i></div>
                         </div>
                     </div>
                     <div className="bottom-header">

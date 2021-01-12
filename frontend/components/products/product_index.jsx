@@ -28,6 +28,8 @@ class ProductIndex extends React.Component {
             return 'Shop All Makeup'
         } else if (this.props.category === 'skincare') {
             return 'Shop All Skincare'
+        } else if (this.props.category === 'fragrance') {
+            return 'Shop All Fragrance'
         } else if (this.props.category === 'search') {
             return 'Search Results'
         } else {

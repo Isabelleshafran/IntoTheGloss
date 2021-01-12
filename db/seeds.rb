@@ -34,6 +34,10 @@ c3 = Category.create!(
     name: "body"
 )
 
+c4 = Category.create!(
+    name: "fragrance"
+)
+
 p1 = Product.create!(
     title: "The Skincare Edit",
     description: "mini skincare essentials", 
@@ -328,6 +332,26 @@ p26 = Product.create!(
     img_url: "26.jpg",     
     price: 64, 
     category_id: c3.id
+)
+
+p27 = Product.create!(
+    title: "Glossier You", 
+    description: "eau de parfum", 
+    details: "The ultimate personal fragrance",
+    whyspecial: "How to describe Glossier You? First you smell the pink pepper—the bright, sparkling, spicy top note that makes a good first impression. Then you get into the woodsy, slightly sweet heart of the scent that comes from ambrette seeds and warm, ambery ambrox. It’s balanced with iris, a white floral, for a creamy freshness. It’s not one of those perfumes you wear to become someone else. Mostly, it smells like you: soft, warm, familiar. We designed it to feel open ended, like it’ll grow with you no matter where you are in your personal evolution.",
+    img_url: "27.jpg", 
+    price: 60, 
+    category_id: c4.id
+)
+
+p28 = Product.create!(
+    title: "The Perfect Couple", 
+    description: "eau de parfum + sheer matte lipstick", 
+    details: "You with a kiss. ust in time for Valentine’s Day: the ultimate personal fragrance + our sheer matte lipstick—together in one set.",
+    whyspecial: "Glossier You: Sparkling, spicy pink pepper notes make a good first impression, followed by the woodsy, slightly sweet heart of the scent that comes from ambrette seeds and warm, ambery ambrox (plus some fresh iris to balance things out). But mostly, it smells like you: soft, warm, comforting, familiar. Generation G: Gives you the look of just-blotted lipstick (soft edges, matte finish) but without the blot (we did it for you!). The balmy, comfortable texture glides right on. Swipe once or twice for a subtle wash of color; apply three to four swipes for a stronger color payoff",
+    img_url: "28.jpg",
+    price: 65, 
+    category_id: c4.id
 )
 
 

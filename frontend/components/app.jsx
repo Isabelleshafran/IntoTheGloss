@@ -24,6 +24,7 @@ const App = () => (
             <Route exact path="/makeup" component={ProductIndexContainer} />
             <Route exact path="/skincare" component={ProductIndexContainer} />
             <Route exact path="/body" component={ProductIndexContainer} />
+            <Route exact path="/fragrance" component={ProductIndexContainer} />
             <Route exact path="/:category/:productId" component={ProductShowContainer} />
             <Route exact path="/search" component={SearchContainer} />
             <Redirect to="/" />

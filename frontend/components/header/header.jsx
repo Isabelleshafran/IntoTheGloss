@@ -67,6 +67,7 @@ class Header extends React.Component {
                         <Link to="/makeup"><div className="makeup">Makeup</div></Link>
                         <Link to="/skincare"><div className="skincare">Skincare</div></Link>
                         <Link to="/body"><div className="body">Body</div></Link>
+                        <Link to="/fragrance"><div className="body">Fragrance</div></Link>
                     </div>
                 </nav>
             </div>

@@ -23,7 +23,7 @@ class Splash extends React.Component {
                             <div className="hero-copy">
                                 <h3 className="splash-copy">Get to know You</h3>
                                 <h3 className="splash-copy-small">Sparkly, woodsy, and slightly sweet</h3>
-                                <Link to={`/shopall/`}><button className="splash-shop-now">Shop Now</button></Link>
+                                <Link to={`/fragrance`}><button className="splash-shop-now">Shop Now</button></Link>
                             </div>
 
                         </div>

@@ -18,12 +18,14 @@ class Splash extends React.Component {
                         <div className="hero-images">
                             <img className="left-hero" src={window.left_hero} />
                             <img className="right-hero"src={window.right_hero} />
-                        </div>
-                        <div className="hero-copy">
                             <img className="g-png" src={window.glossier_g} />
-                            <h3 className="boy-brow-copy">Extremely giftable gifts.</h3>
 
-                            <Link to={`/shopall/`}><button className="boy-brow-shop-now">Shop Now</button></Link>
+                            <div className="hero-copy">
+                                <h3 className="splash-copy">Get to know You</h3>
+                                <h3 className="splash-copy-small">Sparkly, woodsy, and slightly sweet</h3>
+                                <Link to={`/shopall/`}><button className="splash-shop-now">Shop Now</button></Link>
+                            </div>
+
                         </div>
                     </div>
                     <div className="feat-container">

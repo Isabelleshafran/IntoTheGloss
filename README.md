@@ -6,7 +6,7 @@ IntoTheGloss is a beauty and skincare e-commerce site inspired by Glossier.
 
 Live site: [IntoTheGloss](https://isabelle-glossier.herokuapp.com/#/)
 
-![text](https://github.com/Isabelleshafran/IntoTheGloss/blob/master/app/assets/images/readme/Splash.png?raw=true)
+![splash](./app/assets/images/ShareLink.png)
 
 ## Technologies Used 
 * Ruby on Rails
@@ -21,12 +21,12 @@ Live site: [IntoTheGloss](https://isabelle-glossier.herokuapp.com/#/)
 ### Splash Page 
  * Users are able to view featured items on main page.
  
- ![text](https://github.com/Isabelleshafran/IntoTheGloss/blob/master/app/assets/images/readme/splashvideo.gif?raw=true)
+ ![text](./app/assets/images/readme/Splash.gif)
 
 ### Sign In/Sign Up
  * Users are able to sign in to an existing acctount, create a new account, or use demo user log in feature all within the modal.
  
-![text](https://github.com/Isabelleshafran/IntoTheGloss/blob/master/app/assets/images/readme/signup_signin.png?raw=true)
+![text](./app/assets/images/readme/signup_signin.png)
 
 ### Product Index 
  * Displays all products available 
@@ -50,4 +50,4 @@ Live site: [IntoTheGloss](https://isabelle-glossier.herokuapp.com/#/)
 ### Search Bar
  * Users can search for products and if there is no match, they are given popular search terms to try 
  
- ![text](https://github.com/Isabelleshafran/IntoTheGloss/blob/master/app/assets/images/readme/search.gif?raw=true)
+ ![text](./app/assets/images/readme/search.gif)

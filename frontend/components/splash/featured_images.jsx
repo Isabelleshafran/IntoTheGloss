@@ -19,20 +19,25 @@ class FeaturedImages extends React.Component {
 
         return ( 
             <div>
-                <div className="feature-text">
-                    <h1 className="shop-featured-products">SHOP OUR FEATURED PRODUCTS</h1>
-                    <Link to={"/shopall"}><div className="shop-all-products">Shop All Products</div></Link>
+                <div className="feature-home">
+                    <div className="feature-text">
+                        <h1 className="shop-featured-products">SHOP OUR FEATURED PRODUCTS</h1>
+                        <Link to={"/shopall"}><div className="shop-all-products">Shop All Products</div></Link>
+                    </div>
+
                 </div>
-                <div className="splash-products">
-                    {products.map(product => {
-                        return (
-                            <FeaturedImageItem 
-                            key={product.id} 
-                            product={product} 
-                            category={this.props.category}
-                            openModal={this.props.openModal}/>
-                        )
-                    })}
+                <div className="splash-home">
+                    <div className="splash-products">
+                        {products.map(product => {
+                            return (
+                                <FeaturedImageItem 
+                                key={product.id} 
+                                product={product} 
+                                category={this.props.category}
+                                openModal={this.props.openModal}/>
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
          );

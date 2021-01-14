@@ -29,7 +29,8 @@
     display: flex;
     font-family: "Apercu Pro", -apple-system, BlinkMacSystemFont, Helvetica, "Helvetica Neue", Arial, sans-serif;
     margin-top: 85px;
-
+    justify-content: center;
+    margin-right: 150px;
 }
 
 .splash-copy {
@@ -71,15 +72,22 @@
     font-size: 20px;
 }
 
+.splash-home {
+    display: flex;
+
+    justify-content: center;
+
+}
+
 .splash-products {
     display: flex;
     flex-wrap: nowrap;
+    
     font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
-    margin-left: 8%;
-    align-items: center;
+
     overflow-x: auto;
     height: 525px;
-    width: 83%;
+    max-width: 1300px;
 }
 
 .splash-products::-webkit-scrollbar-track {
@@ -100,11 +108,16 @@
     height: 372px;
     width: 270px;
 }
+
+.feature-home {
+     display: flex;
+    justify-content: center;
+
+}
 .feature-text {
+    width: 1300px;
     display: flex;
     justify-content: space-between;
-    margin-left: 9%;
-    margin-right: 9%;
     font-family: Apercu Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 

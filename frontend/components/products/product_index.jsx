@@ -19,6 +19,7 @@ class ProductIndex extends React.Component {
         if(prevProps.match.path !== this.props.match.path) {
             this.props.fetchProducts(this.props.category)
         }
+
     }
 
     title(){
@@ -53,6 +54,8 @@ class ProductIndex extends React.Component {
                     </div>
                 </div>
             )
+
+
         } else {
             return ( 
                 <div>
@@ -60,12 +63,13 @@ class ProductIndex extends React.Component {
                     <div className="products">
                         {products.map(product => {
                             return (
-                             <ProductIndexItem key={product.id} product={product} category={this.props.category} openModal={this.props.openModal}/>   
+                                <ProductIndexItem key={product.id} product={product} category={this.props.category} openModal={this.props.openModal}/>   
                             )
                         })}
                     </div>
                 </div>
-             );
+                ); 
+            
         }
     }
 }

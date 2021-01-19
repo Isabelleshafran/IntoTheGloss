@@ -13,7 +13,7 @@ class Splash extends React.Component {
     render() { 
 
             return ( 
-                <div>
+                <div className="main-hero">
                     <div className="hero">
                         <div className="hero-images">
                             <img className="left-hero" src={window.left_hero} />

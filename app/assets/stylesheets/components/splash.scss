@@ -1,4 +1,14 @@
 
+
+
+.hero {
+    display: flex;
+    font-family: "Apercu Pro", -apple-system, BlinkMacSystemFont, Helvetica, "Helvetica Neue", Arial, sans-serif;
+    margin-top: 85px;
+    justify-content: center;
+    margin-right: 150px;
+}
+
 .g-png {
     width: 150px;
     height: 150px;
@@ -25,13 +35,6 @@
 }
 
 
-.hero {
-    display: flex;
-    font-family: "Apercu Pro", -apple-system, BlinkMacSystemFont, Helvetica, "Helvetica Neue", Arial, sans-serif;
-    margin-top: 85px;
-    justify-content: center;
-    margin-right: 150px;
-}
 
 .splash-copy {
     font-size: 48px;
@@ -160,3 +163,35 @@
 }
 
 
+@media (max-width: 850px) {
+    .main-hero {
+        width: 800px;
+    }
+
+    .left-hero {
+    max-width: 250px;
+    margin-left: 6%;
+    max-height: 95%;
+}
+
+
+    .right-hero {
+        margin-left: 2%;
+        max-width: 250px;
+        max-height: 95%;
+    }
+
+
+        .g-png {
+        width: 110px;
+        height: 110px;
+        margin-top: 90px;
+        margin-left: -65px;
+    }
+
+    .bottom-header {
+        width: 350px;
+    }
+
+
+}

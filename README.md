@@ -32,6 +32,21 @@ Live site: [IntoTheGloss](https://isabelle-glossier.herokuapp.com/#/)
  * Displays all products available 
  * Users are able to filter by category 
  * Users are able to cart to bag directly from index
+ * Filters products by grabbing category from the URL params and passing information to product index controller logic
+```
+    def index 
+        if params[:name] === 'shopall'
+            @products = Product.all
+            render "api/products/index"
+        elsif params[:name] === "/"
+            @products = Product.where(:title => ["Futuredew", "Boy Brow", "Cloud Paint", "Hand Cream", "Generation G", "Milk Jelly Cleanser", "Solution"])
+            render "api/products/index"  
+        else 
+            @products = Product.joins(:category).where(categories: { name: params[:name]} )
+            render "api/products/index"
+        end
+    end
+```
  
  ![text](https://github.com/Isabelleshafran/IntoTheGloss/blob/master/app/assets/images/readme/productindex.gif?raw=true)
 
@@ -49,5 +64,27 @@ Live site: [IntoTheGloss](https://isabelle-glossier.herokuapp.com/#/)
 
 ### Search Bar
  * Users can search for products and if there is no match, they are given popular search terms to try 
- 
+ * Utlizes custom search logic in products controller 
+
+Product Controller: 
+```
+    def search 
+        @products = Product.where("title LIKE ?", "%#{params[:search_term]}%")
+        render "api/products/index"
+    end
+```
+
+Header Component Logic To Sanitze Search: 
+```
+    handleSubmit(e){
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            let searchTerm = this.state.search;
+            let search = searchTerm.split(' ').map(word => this.capitalize(word)).join(' ')
+            this.props.fetchSearch(search)
+            this.props.history.push('/search')
+            this.setState({ search: "" })
+        }
+    }
+```
  ![text](./app/assets/images/readme/search.gif)

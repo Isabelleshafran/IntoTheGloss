@@ -29,11 +29,7 @@ class Cart extends React.Component {
             localStorage.setItem('cartObj', JSON.stringify(items))
         }
 
-        if(!this.props.currentUser) {
-            this.props.openModal('signup')
-        } else {
-            this.props.openModal('account')
-        }
+        this.props.openModal('checkout')
     }
     
 render() { 
@@ -50,7 +46,7 @@ render() {
                         return (
                             <div>
                                 <CartItem product={product} 
-                                key={product.title}
+                                key={product.id}
                                 openModal={this.props.openModal}
                                 closeModal={this.props.closeModal}/>
                             </div>

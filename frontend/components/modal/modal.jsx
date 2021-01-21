@@ -5,6 +5,8 @@ import SigninFormContainer from '../session_form/signin_form_container';
 import SignupFormContainer from '../session_form/signup_form_container';
 import AccountContainer from '../header/account_container';
 import CartContainer from '../cart/cart_container';
+import CheckoutContainer from '../cart/checkout_container'
+
 
 function Modal({ modal, closeModal }) {
     if (!modal) {
@@ -23,6 +25,9 @@ function Modal({ modal, closeModal }) {
             break;
         case 'cart':
             component = <CartContainer />
+            break;
+        case 'checkout':
+            component = <CheckoutContainer />
             break;
         default:
             return null;

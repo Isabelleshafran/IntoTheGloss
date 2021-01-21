@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import { logout } from '../../actions/session_actions';
 import { openModal, closeModal } from '../../actions/modal_actions';
 import Cart from './cart'
+import Checkout from './checkout';
 
 
 const msp = (state) => ({

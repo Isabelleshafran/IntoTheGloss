@@ -130,3 +130,25 @@
         height: 250px;
 
     }
+
+.checkout {
+    display: flex;
+    justify-content: center;
+    font-family: "Freight Display", Athelas, Constantias, Georgia, Times, "Times New Roman", serif;
+    font-weight: 400;
+    margin-top: 100px;
+}
+
+.return-to-homepage {
+    display: flex;
+    justify-content: center;
+    font-family: "Freight Display", Athelas, Constantias, Georgia, Times, "Times New Roman", serif;
+    font-weight: 400;
+    margin-top: 150px;
+}
+
+.return-to-homepage:hover {
+    cursor: pointer;
+    color: rgb(85, 85, 255);
+}
+

@@ -22,6 +22,7 @@ class Api::ProductsController < ApplicationController
 
     def search 
         @products = Product.where("title LIKE ?", "%#{params[:search_term]}%")
+        # @products = Product.where("title LIKE :search OR description LIKE :search", search: "%#{params[:search_term]}%")
         render "api/products/index"
     end
 end
